@@ -111,7 +111,7 @@
 	<div class="formbox">
 		<img src="https://yulisaguan.github.io/pictures/登陆_05.png">
 		<div class="line"></div>
-		<input  type="number" name="account" placeholder="请输入手机号" maxlength="11" >
+		<input  type="text" name="account" maxlength="11" placeholder="请输入手机号" oninput="value=value.replace(/[^\d]/g,'')">
 	</div>
 </div>
 <div class="input">
