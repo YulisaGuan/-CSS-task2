@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>LogIn</title>
+	<style type="text/css">
+		body {
+			margin: 0;
+			background-color: #eff0f4;
+		}
+		
+		span {
+			color: white;
+			text-align: center;
+		}
+		.wrap {
+			height:45px; /*包裹fixed元素防止覆盖下面的元素*/
+		}
+
+		.top {
+			background: #5fc0cd;
+			padding: 10px;
+			left: 0;
+			right: 0;
+			position: fixed;	
+		}
+		
+		.close {
+			float: left;
+			width: 35px;
+			text-align: center;
+			line-height: 25px;
+		}
+		.signin {
+			float: right;
+			width: 35px;
+			text-align: center;
+			line-height: 25px;
+		}
+		.login {
+			margin-left: auto;
+			margin-right: auto;
+			width: 40px;
+			font-size: 18px;
+			text-align: center;
+			line-height: 25px;
+		}
+		.input {
+			width: 100%;
+			margin-top: 10px;
+			background-color: white;
+
+		}
+		.line {
+			display: inline-block;
+			width: 3px;
+			height: 35px;
+			background: #eff0f4;
+			margin-right: 15px;
+			vertical-align: middle;
+		}
+
+		.formbox {
+			display: inline-block;
+		}
+		.formbox img {
+			width: 20px;
+			padding:15px;
+			vertical-align: middle;
+		}
+		.formbox input{
+			border: none;
+			font-size: 18px;
+			outline: medium;
+			vertical-align: middle;
+		}
+		.formbtn {
+			width: 100%;
+			background-color: #5fc0cd;
+			margin-top: 50px;
+			height: 60px;
+			text-align: center;
+		}
+		.formbtn input {
+			background: none;
+			border: none;
+			color: white;
+			font-size: 20px;
+			margin-top: 15px;
+		}
+		.forget a{
+			margin:5px;
+			float: right;
+			color: #5fc0cd;;
+		}
+
+
+	</style>
+</head>
+<body>
+	
+<div class="wrap">
+	<div class="top">
+		<header class="close"><span>关闭</span></header>
+		<header class="signin"><span>注册</span></header>
+		<header class="login"><span>登陆</span></header>
+	</div>
+</div>
+<div class="input">
+	<div class="formbox">
+		<img src="C:\Users\guan7\Desktop\登陆_05.png">
+		<div class="line"></div>
+		<input  type="text" name="account" placeholder="请输入手机号" >
+	</div>
+</div>
+<div class="input">
+	<div class="formbox">
+		<img src="C:\Users\guan7\Desktop\登陆_08.png">
+		<div class="line"></div>
+		<input type="password" name="password" placeholder="请输入密码" >
+	</div>
+</div>
+	<div class="formbtn"><input type="button" name="log" value="登 陆" >
+</div>
+<div class="forget"><a href=#>忘记密码</a> </div>
+</body>
+</html>
