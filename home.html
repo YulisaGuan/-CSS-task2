@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>Home</title>
+	<style type="text/css">
+		body {
+			margin: 0;
+		}
+		hr {
+			color: #e1e5e7;
+			height: .5px;
+		}
+		.hrstyle {
+			margin-left: 10px;
+
+		}
+
+		.wrap {
+			height: 40px;
+			width: 100%;
+		}
+
+		.top {
+			position: fixed;	
+			left: 0;
+			right: 0;
+			padding: 10px 20px;
+			background: #5fc0cd;
+		}
+		
+		.back img {
+			float: left;
+			width: 12px;
+			vertical-align: middle;
+		}
+
+		.title {
+			margin-left: auto;
+			margin-right: auto;
+			width: 90px;
+			vertical-align: middle;
+		}
+		.title span {
+			font-size: 18px;
+			line-height: 1;
+			letter-spacing: 2px;
+			color: #fff;
+		}
+		.imgbg {
+			display: flex;
+			justify-content: flex-start;
+			background-image: url(bg.png);
+			background-repeat: no-repeat;
+			background-position: center;
+			height: 200px;
+			width: 100%;
+			background-size: cover;
+		}
+
+		.photo {
+			padding: 50px 20px 50px 20px;
+			width: 100px;
+			height: 100px;
+		}
+		.info {
+			padding-top: 70px;
+			padding-bottom: 70px;
+			color:#fff;
+		}
+		.info_1 {
+			line-height: 35px;			
+		}
+
+		.name {
+			display: inline-block;
+			float: left;
+			font-size: 20px;			
+		}
+		.age {
+			display: inline-block;
+			bottom: 0;
+			float: right;
+			font-size: 16px;
+			
+		}
+		.loc {
+			float: left;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			font-size: 16px;
+		}
+		.loc img {
+			width: 12px;
+		}
+
+		.skill {
+			float: left;
+			padding: 20px;
+			width: 100%;
+			line-height: 20px;
+			font-size: 20px;
+		}
+		.skill img {
+			float: left;
+			padding-right: 10px;
+			height: 18px;
+			vertical-align: text-bottom;
+		}
+		
+		.stars {
+			padding: 10px 20px;
+
+		}
+		.stars img {
+			width: 15px;
+			height: 15px;
+			margin-right: 2px;
+			vertical-align: middle;
+		}
+		.stars span {
+			vertical-align: middle;
+		}
+
+		.line {
+			display: inline-block;
+			width: 2px;
+			height: 30px;
+			background: #eff0f4;
+			margin-right: 10px;
+			margin-left: 10px;
+			vertical-align: middle;
+		}
+		.details {
+			padding: 10px 20px;
+			display: flex;
+			flex-flow: nowrap;
+			justify-content: flex-start;
+			align-items: center;
+		}
+		.gray {
+ 
+			white-space: nowrap;
+			color: #999;
+			
+		}
+		.red {
+			color: #e26163;
+			font-weight: bolder;
+		}
+
+		.buttons {
+			position: fixed;
+			left: 0;
+			bottom: 0;		
+			display: flex;
+			flex-wrap: nowrap;
+			justify-content: space-around;
+			width: 100%;	
+			background-color: #fff
+			
+		}
+
+		.msg {
+
+			flex-grow: 1;
+			border-style: solid;
+			border-color: #5fc0cd;
+			border-radius: 10%;
+			width: 48%;
+			left: 2%;
+			line-height: 50px;
+			text-align: center;
+			background-color: #fff;
+			
+
+		}
+		.call {
+
+			flex-grow: 1;
+			margin-left: 5px;
+			border-style: solid;
+			border-color: #5fc0cd;
+			border-radius: 10%;
+			width: 48%;
+			right: 2%;
+			line-height: 50px;
+			text-align: center;
+			background-color: #5fc0cd;
+			
+
+		}	
+
+		.msg input {
+			background: none;
+			border: none;
+			color: #5fc0cd;
+			font-size: 20px;
+		}
+	
+		
+		.call input {
+			background: none;
+			border: none;
+			color: #fff;
+			font-size: 20px;
+		}
+
+
+	</style>
+</head>
+<body>
+		
+<div class="wrap">
+	<div class="top">
+		<header class="back"><img src="https://yulisaguan.github.io/pictures/返回.png"></header>
+		<header class="title"><span>个人主页</span></header>
+	</div>
+</div>
+
+	<div class="imgbg">
+		<img class="photo" src="https://yulisaguan.github.io/pictures/头像.png">
+	
+		<div class="info">
+			<div class="info_1">
+				<div class="name">高素雅</div>
+				<div class="age">51岁</div>
+			</div>
+			<div class="loc">
+				<img src="https://yulisaguan.github.io/pictures/定位.png"> 
+				<span>北京.通州.果园</span>
+			</div>
+		</div>
+	</div>		
+		
+	<div class="skill">
+		<img src="https://yulisaguan.github.io/pictures/split.png">
+		<span>专业技能</span>
+	</div>
+	<hr>
+	<div class="stars">
+		<img src="https://yulisaguan.github.io/pictures/star.png">
+		<span>住家</span>
+		<div class="line"></div>
+		<img src="https://yulisaguan.github.io/pictures/star.png">
+		<span>不含餐</span>	
+	</div>
+	<hr class="hrstyle">
+	<div class="details">
+		<span class="gray">从业年限</span>
+		<div class="line"></div>
+		<span>0~3年</span>	
+	</div>
+	<hr class="hrstyle">
+	<div class="details">
+		<span class="gray">工作时间</span>
+		<div class="line"></div>
+		<span>全天</span>	
+	</div>
+	<hr class="hrstyle">
+	<div class="details">
+		<span class="gray">服务价格</span>
+		<div class="line"></div>
+		<span class="red">25元/小时</span>	
+	</div>
+	<hr class="hrstyle">
+	<div class="details">
+		<span class="gray">自我介绍</span>
+		<div class="line"></div>
+		<span>可以洗衣、做饭、照顾老人。在护工方面有5年的经验，经验丰富。</span>	
+	</div>
+	<hr>
+	
+		<div class="wrap">
+			<footer class="buttons">
+				<div class="msg"><input type="button" name="msg" value="留言" ></div>
+				<div class="call"><input type="button" name="msg" value="电话联系" ></div>
+			</footer>
+		</div>
+	
+</body>
+</html>
