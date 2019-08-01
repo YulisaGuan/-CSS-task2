@@ -9,6 +9,7 @@
 			margin: 0;
 		}
 		hr {
+			border: none;
 			border-bottom: 1px solid #e1e5e7;
 			transform: scaleY(0.5);
 		}
@@ -17,7 +18,7 @@
 		}
 
 		.wrap {
-			height: 40px;
+			height: 45px;
 			width: 100%;
 		}
 
@@ -25,7 +26,7 @@
 			position: fixed;
 			left: 0;
 			right: 0;
-			padding: 10px 20px;
+			padding: 15px 20px;
 			background: #5fc0cd;
 		}
 
@@ -50,11 +51,11 @@
 		.imgbg {
 			display: flex;
 			justify-content: flex-start;
+			height: 200px;
+			width: 100%;
 			background-image: url(task5bg.png);
 			background-repeat: no-repeat;
 			background-position: center;
-			height: 200px;
-			width: 100%;
 			background-size: cover;
 		}
 
@@ -82,7 +83,6 @@
 			bottom: 0;
 			float: right;
 			font-size: 16px;
-
 		}
 		.loc {
 			float: left;
@@ -95,17 +95,20 @@
 		}
 
 		.skill {
-			float: left;
-			padding: 20px;
-			width: 100%;
-			line-height: 20px;
+			margin: 0;
+			line-height: 50px;
 			font-size: 20px;
 		}
 		.skill img {
 			float: left;
+			padding-top: 20px;
 			padding-right: 10px;
+			padding-left: 20px;
 			height: 18px;
-			vertical-align: text-bottom;
+			vertical-align: middle;
+		}
+		.skill span {
+			vertical-align: middle;
 		}
 
 		.stars {
@@ -139,14 +142,15 @@
 			align-items: center;
 		}
 		.gray {
-
 			white-space: nowrap;
 			color: #999;
-
 		}
 		.red {
 			color: #e26163;
 			font-weight: bolder;
+		}
+		.tailwrap {
+			height: 70px;
 		}
 
 		.buttons {
@@ -243,7 +247,7 @@
 	</div>
 	<hr>
 
-		<div class="wrap">
+		<div class="tailwrap">
 			<footer class="buttons">
 				<button class="msg-btn">留言</button>
 				<button class="call-btn">电话联系</button>
