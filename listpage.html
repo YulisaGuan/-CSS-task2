@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<title>List Page</title>
+
+	<style type="text/css">
+		body {
+			margin:0; 
+		}
+		i {
+			background-image: url(6_sprites.png);
+			background-repeat: no-repeat;
+			background-size: 21.1rem 12.5rem;
+		}
+		.bg-6_loclg {
+			float: right;
+			position: fixed;
+			top: 0;
+			right: 0;
+		    width: 1.7rem; 
+		    height: 1.8rem;
+		    margin: 1rem; 
+		    background-position: -0.4rem -0.3rem;
+		    background-size: 8.4rem 4.6rem;
+		}
+
+		.bg-6_down {
+			float: right;
+			position: relative;
+		    width: 0.7rem; 
+		    height: 0.5rem;
+		    margin-top: 1.5rem;
+		    margin-right: 0.5rem;
+		    background-position: -8.8rem -4.8rem;
+		    background-size: 10.5rem 6.3rem
+		}
+		.bg-6_calendar {
+			float: left;
+		    width: 1rem; 
+		    height: 1rem;
+		    padding: 0.5rem; 
+		    vertical-align: middle;
+		    background-position: -8.2rem -0.3rem;
+		    background-size: 10rem 6rem;
+		}
+
+		.bg-6_locms {
+			float: left;
+		    width: 0.9rem; 
+		    height: 0.9rem;
+		    padding: 0.5rem; 
+		    background-position: -8.5rem -2.7rem;
+		    background-size: 10.5rem 6.3rem;
+		}
+
+		.bg-6_right {
+			float: right;
+		    width: 0.9rem; 
+		    height: 1.8rem;
+		    margin-top: 2rem;
+		    margin-left: 0.5rem; 
+		    background-position: -6.9rem -0.3rem;
+		    background-size: 10.5rem 6.3rem;
+		}
+
+		.bg-6_house {
+			width: 1.7rem; 
+			height: 1.6rem;
+		    background-position: -2.4rem -0.3rem;
+		    background-size: 7.1rem 4.2rem;
+		}
+
+		.bg-6_Write {
+		    position: absolute;
+		    width: 1.8rem; 
+		    height: 1.9rem;
+		    background-position: -2.7rem -2.7rem;
+		    background-size: 8.4rem 5rem;
+		    margin-top: 0.6rem;
+		    margin-left: 0.9rem;
+		}
+
+		.bg-6_man {
+		    width: 1.6rem;
+		    height: 1.6rem;
+		    background-position:  -0.2rem -2.5rem;
+		    background-size: 7rem 4.2rem;
+		}
+
+		.wrap {
+			height: 4rem;
+		}
+		header {
+			position: fixed;
+			top: 0;
+			right: 0;
+			width: 100%;
+			background-color: #5fc0cd;
+			height: 4rem;
+			line-height: 3rem;
+		}
+		
+		.buy {
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 0.4rem;
+			border-radius: 0.5rem;
+			background-color: #55a8b3;
+			width: 10rem;
+		}
+		.sell {
+			float: right;
+			position: relative;
+			border-radius: 0.5rem;
+			background-color: #fff;
+			width: 5rem;
+		}
+		.buy button {
+			border: none;
+			background: none;
+			outline: none;
+			color: #fff;
+			font-size: 1.2rem;
+			padding: .7rem; 
+		}
+		.sell button {
+			border: none;
+			background: none;
+			outline: none;
+			font-size: 1.2rem;
+			padding: .7rem; 
+			color: #5fc0cd;
+		}
+
+		.menugroup {
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: space-between;
+			border-bottom: 1px solid #ddd;
+		}
+		.menu {
+			flex-basis: 0%;
+			flex-grow: 1; 
+			height: 3.5rem;
+			line-height: 3.5rem;
+			text-align: center;
+
+		}
+		.menu button {
+			margin-left: auto;
+			margin-right: auto;
+			border: none;
+			background: none;
+			outline: none;
+			font-size: 1rem;
+			color: #999;
+		}
+		.line {
+			width: 1px;
+			background: linear-gradient(0deg,#fff, #ddd,#fff);
+		}
+
+		.content {
+			display: flex;
+			flex-flow: column wrap;
+			justify-content: space-between;
+			align-content: space-between;
+			padding: 1rem;
+			height: 6rem;
+			/*overflow: hidden;*/
+			border-bottom: 1px solid #ddd;
+
+		}
+		.service {
+			color: #999;
+			height: 1.2rem;
+			line-height: 1.2rem;
+			
+		}
+		.date {
+			margin-left: 2rem;
+			font-size: 1.2rem;
+			height: 1.2rem;
+			line-height: 1.2rem;
+			color: #000;
+			text-overflow: ellipsis;
+			white-space:nowrap;
+			overflow:hidden;
+			
+		}
+		
+		.price {
+			flex-basis: 0%;
+			line-height: 6rem;
+			float: right;
+			color: #e63b0e;
+			font-size: 1.2rem;
+		}
+
+		.tailwrap {
+			height: 4rem;
+		}
+
+		footer {
+			position: fixed;
+			bottom: 0;
+			right: 0;
+			padding: .1rem;
+			display: flex;
+			flex-wrap: nowrap;
+			justify-content: center;
+			width: 100%;
+			height: 3.5rem;
+			background-color: #f8fafb
+		}
+
+		.circle {
+			width: 3.5rem;
+			height: 3.5rem;
+			border-radius: 50%;
+			background-color: #5fc0cd;
+			margin-left: 2.5rem;
+			margin-right: 2.5rem;
+		}
+
+		.footericon {
+			display: flex;
+			flex-shrink: 1;
+			text-align: center;
+			flex-flow: column nowrap;
+			align-content: center;
+			padding: .5rem
+		}
+		.home {
+			font-size: .8rem;
+			color:  #5fc0cd;
+
+		}
+		.my {
+			font-size: .8rem;
+			color:  #a5a5a5;
+		}
+
+
+		
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<header>
+			<div class="buy">
+				<button>找雇主</button>
+				<div class="sell">
+					<button>找护工</button>
+				</div>
+			</div>
+			<i class="bg-6_loclg"></i>
+		</header>
+	</div>
+	<div class="menugroup">
+		<div class="menu">
+			<button>所在地</button>
+			<i class="bg-6_down"></i>
+		</div>
+		<div class="line"></div>
+		<div class="menu">
+			<button>食宿</button>
+			<i class="bg-6_down"></i>
+		</div>
+		<div class="line"></div>
+		<div class="menu">
+			<button>病人情况</button>
+			<i class="bg-6_down"></i>
+		</div>
+	</div>
+
+	<div class="content">
+			<div class="service">
+				<i class="bg-6_calendar"></i>
+				<span>服务日期</span>
+			</div>
+			<div class="date">2015-7-5 至 2015-7-12</div>
+			<div class="service">
+				<i class="bg-6_locms"></i>
+				<span>北京.通州.果园</span>
+			</div>
+		<div class="price">
+			<span>25元/小时</span>
+			<i class="bg-6_right"></i>
+		</div>
+	</div>
+
+	<div class="content">
+			<div class="service">
+				<i class="bg-6_calendar"></i>
+				<span>服务日期</span>
+			</div>
+			<div class="date">2015-7-5 至 2015-7-12</div>
+			<div class="service">
+				<i class="bg-6_locms"></i>
+				<span>北京.通州.果园</span>
+			</div>
+		<div class="price">
+			<span>35元/小时</span>
+			<i class="bg-6_right"></i>
+		</div>
+	</div>
+
+		<div class="content">
+			<div class="service">
+				<i class="bg-6_calendar"></i>
+				<span>服务日期</span>
+			</div>
+			<div class="date">2015-7-5 至 2015-7-12</div>
+			<div class="service">
+				<i class="bg-6_locms"></i>
+				<span>北京.通州.果园</span>
+			</div>
+		<div class="price">
+			<span>45元/小时</span>
+			<i class="bg-6_right"></i>
+		</div>
+	</div>
+
+	<div class="content">
+			<div class="service">
+				<i class="bg-6_calendar"></i>
+				<span>服务日期</span>
+			</div>
+			<div class="date">2015-7-5 至 2015-7-12</div>
+			<div class="service">
+				<i class="bg-6_locms"></i>
+				<span>北京.通州.果园</span>
+			</div>
+		<div class="price">
+			<span>45元/小时</span>
+			<i class="bg-6_right"></i>
+		</div>
+	</div>
+
+	<div class="content">
+			<div class="service">
+				<i class="bg-6_calendar"></i>
+				<span>服务日期</span>
+			</div>
+			<div class="date">2015-7-5 至 2015-7-12</div>
+			<div class="service">
+				<i class="bg-6_locms"></i>
+				<span>北京.通州.果园</span>
+			</div>
+		<div class="price">
+			<span>45元/小时</span>
+			<i class="bg-6_right"></i>
+		</div>
+	</div>
+
+	<div class="content">
+			<div class="service">
+				<i class="bg-6_calendar"></i>
+				<span>服务日期</span>
+			</div>
+			<div class="date">2015-7-5 至 2015-7-12</div>
+			<div class="service">
+				<i class="bg-6_locms"></i>
+				<span>北京.通州.果园</span>
+			</div>
+		<div class="price">
+			<span>45元/小时</span>
+			<i class="bg-6_right"></i>
+		</div>
+	</div>
+
+	<div class="content">
+			<div class="service">
+				<i class="bg-6_calendar"></i>
+				<span>服务日期</span>
+			</div>
+			<div class="date">2015-7-5 至 2015-7-12</div>
+			<div class="service">
+				<i class="bg-6_locms"></i>
+				<span>北京.通州.果园</span>
+			</div>
+		<div class="price">
+			<span>45元/小时</span>
+			<i class="bg-6_right"></i>
+		</div>
+	</div>
+
+
+
+
+
+
+
+	<div class="tailwrap"></div>
+	<footer>
+		<div class="footericon">
+			<i class="bg-6_house"></i>
+			<span class="home">首页</span>
+		</div>
+		<div class="circle"><i class="bg-6_Write"></i></div>	
+		<div class="footericon">
+			<i class="bg-6_man"></i>
+			<span class="my">我的</span>
+		</div>
+	</footer>
+</body>
+</html>
