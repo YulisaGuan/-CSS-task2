@@ -241,12 +241,12 @@
 		}
 		.home {
 			font-size: .8rem;
-			color:  #5fc0cd;
+			color: #5fc0cd;
 
 		}
 		.my {
 			font-size: .8rem;
-			color:  #a5a5a5;
+			color: #a5a5a5;
 		}
 
 
@@ -267,17 +267,35 @@
 	</div>
 	<div class="menugroup">
 		<div class="menu">
-			<button>所在地</button>
+			<select name="location">
+				<option>所在地</option>
+				<option>北京</option>
+				<option>上海</option>
+				<option>广州</option>
+				<option>武汉</option>
+			</select>
 			<i class="bg-6_down"></i>
 		</div>
 		<div class="line"></div>
 		<div class="menu">
-			<button>食宿</button>
+			<select class="indent" name="meal">
+				<option>食宿</option>
+				<option>含餐</option>
+				<option>不含餐</option>
+				<option>住家</option>
+				<option>不住家</option>
+			</select>
 			<i class="bg-6_down"></i>
 		</div>
 		<div class="line"></div>
 		<div class="menu">
-			<button>病人情况</button>
+			<select name="case">
+				<option>病人情况</option>
+				<option>能自理</option>
+				<option>不能自理</option>
+				<option>半失能</option>
+				<option>手术后</option>
+			</select>
 			<i class="bg-6_down"></i>
 		</div>
 	</div>
