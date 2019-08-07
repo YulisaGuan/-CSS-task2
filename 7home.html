@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>Game home</title>
+	<style type="text/css">
+		body {
+			margin: 0;  
+			background-color: #f0f0f0;
+		}
+		i {
+			background-image: url(7_1_sprites.png);
+			background-repeat: no-repeat;
+			background-size: 14.6rem 7.6rem;
+		}
+		.bg-7_go {
+			float: right;
+			position: relative;
+			top: 11rem;
+			margin-right: .2rem;
+		    width: 1.4rem; 
+		    height: 2.8rem;
+		    background-position: -.5rem -.5rem;
+		    background-size: 7.3rem 3.8rem;
+		}
+
+		.bg-7_menu1 {
+			float: left;
+			position: fixed;
+		    width: 1.3rem; 
+		    height: 1.2rem;
+		    margin: .7rem;
+		    background-position: -4.1rem -.4rem;
+		    background-size: 5.8rem 3rem;
+		}
+
+		.bg-7_last {
+			float: right;
+			position: relative;
+			margin-top: 1rem;
+			margin-right: .8rem;
+		    width: 1rem; 
+		    height: 1.6rem;
+		    background-position: -2.3rem -.4rem;
+		    background-size: 5.8rem 3rem;
+		}
+		.wrap {
+			width: 100%;
+			height: 3.5rem;
+		}
+		header {
+			position: fixed;
+			width: 100%;
+			height: 2.5rem;
+			padding: 0.5rem;
+			background-color: #29bde0;
+			z-index: 99;
+		}
+
+		.last {
+			margin: 5%;
+			height: 3.5rem;
+			font-size: 1.1rem;
+			text-align: center;
+			color: #9a9a9a;
+			border: 1px solid #c9c9c9;
+			background-color: #fff;
+		}
+		.last p {
+			display: inline-block;
+		}
+		.version {
+			margin: 5%;
+			font-size: 1rem;
+			text-align: center;
+			color: #9a9a9a;
+			border: 1px solid #c9c9c9;
+			background-color: #fff;
+		}
+		.version p{
+			margin-bottom: 0;
+		}
+		.name {
+			padding: 1rem;
+			font-size: 1.3rem;
+			margin-bottom: 1rem;
+			color: #fbb435;
+			border-bottom: 1px solid #fbb435; 
+		}
+
+		.ver {
+			margin-left: 2rem;
+			margin-right: 2rem;
+			margin-top: 1rem;
+			height: 4rem;
+			line-height: 4rem; 
+			padding: 1rem;
+			text-align: center;
+			font-size: 1.1rem;
+			color: #fff;
+			background-color: #69d1e9;
+		}
+		ul.pagination {
+
+		    display: inline-block;
+		    list-style-type: none;
+			padding: 0;
+		    margin: .5rem;
+		}
+
+	    ul.pagination li {
+	        display: inline-block;
+	        margin-right:.2em;
+	        border-radius: 50%;
+	        padding: .5rem .5rem;
+	        background-color: #f0f0f0;
+	    }
+	    ul.pagination li:hover,ul.pagination li:focus {
+	        background-color: #69d1e9;
+	    }
+
+
+	</style>
+</head>
+<body>
+	
+<div class="wrap">
+	<header>
+		<i class="bg-7_menu1"></i>
+	</header>
+</div>
+
+<div class="last">
+	<p>上次游戏：捉鬼游戏猜词版</p>
+	<i class="bg-7_last"></i>
+</div>
+
+<div class="version">
+	<div class="name">捉鬼游戏</div>
+	<div class="choose">
+		<i class="bg-7_go"></i>
+		<div class="ver">简化版</div>
+		<p>有1133个用户正在玩此款游戏</p>
+		<div class="ver">猜词版</div>
+		<p>有1133个用户正在玩此款游戏</p>
+		<div class="ver">白痴版</div>
+		<p>有1133个用户正在玩此款游戏</p>
+		<ul class="pagination">
+		  <li><a class="active" href="#"></a></li>
+		  <li><a href="#"></a></li>
+		  <li><a href="#"></a></li>
+		  <li><a href="#"></a></li>
+		</ul>
+	</div>
+</div>
+
+</body>
+</html>
