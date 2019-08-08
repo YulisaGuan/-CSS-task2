@@ -6,7 +6,7 @@
 	<title>Game vote</title>
 	<style type="text/css">
 		body {
-			margin: 0;  
+			margin: 0;
 			background-color: #29bde0;
 		}
 		i {
@@ -15,63 +15,63 @@
 			background-size: 17.8rem 12.8rem;
 		}
 		.bg-7_menu2 {
-			float: left;
-			position: relative;
-			margin: .6rem;
-		    width: 1.7rem; 
+				float: left;
+				position: relative;
+				margin: .6rem;
+		    width: 1.7rem;
 		    height: 1.7rem;
 		    background-position:  -3.2rem -.4rem;
 		    background-size: 7.1rem 5.1rem;
 		}
 		.bg-7_close {
-			float: right;
-			position: relative;
-			margin: .6rem; 
-		    width: 1.6rem; 
+				float: right;
+				position: relative;
+				margin: .6rem;
+		    width: 1.6rem;
 		    height: 1.6rem;
 		    background-position:  -.4rem -3.2rem;
 		    background-size: 7.1rem 5.1rem;
 		}
 
 		.bg-7_play {
-			float: right;
-			position: relative;
-		    width: 2.1rem; 
+				float: right;
+				position: relative;
+		    width: 2.1rem;
 		    height: 2.1rem;
-		    margin: .5rem; 
+		    margin: .5rem;
 		    background-position: -.4rem -.4rem;
 		    background-size: 7.1rem 5.1rem;
 		}
 
 		.bg-7_knife {
-			display: inline-block;
-			margin-top: 1vw;
-		    width: 4vw; 
+				display: inline-block;
+				margin-top: 1vw;
+		    width: 4vw;
 		    height: 2.7vw;
 		    background-position: -21.2vw -1.5vw;
 		    background-size: 26.7vw 19.2vw;
 		}
 		.bg-7_scope {
-			display: inline-block;
-			margin-top: 1vw;
-		    width: 4vw; 
+				display: inline-block;
+				margin-top: 1vw;
+		    width: 4vw;
 		    height: 3vw;
 		    background-position: -20.5vw -7vw;
 		    background-size: 26.7vw 19.2vw;
 		}
 		.bg-7_add {
-			display: inline-block;
-			margin-top: 1vw;
-		    width: 2.3vw; 
+				display: inline-block;
+				margin-top: 1vw;
+		    width: 2.3vw;
 		    height: 2.6vw;
 		    background-position:  -21vw -12.8vw;
 		    background-size: 26.7vw 19.2vw;
 		}
 
 		.bg-7_aim {
-			display: inline-block;
-			margin-top: 1vw;
-		    width: 3.3vw; 
+				display: inline-block;
+				margin-top: 1vw;
+		    width: 3.3vw;
 		    height: 3.3vw;
 		    background-position: -7.6vw -9.9vw;
 		    background-size: 21.2vw 15.4vw;
@@ -125,7 +125,7 @@
 			display: flex;
 			flex-flow: row wrap;
 			justify-content: space-around;
-			margin: 1rem; 
+			margin: 1rem;
 			width: 100%；
 		}
 
@@ -134,7 +134,7 @@
 			display: flex;
 			flex-flow: column nowrap;
 			justify-content: flex-end;
-			align-items: center; 
+			align-items: center;
 			width: 25vw;
 			height: 38vw;
 
@@ -142,11 +142,11 @@
 		.charater {
 			width: 25vw;
 			height: 20vw;
-			font-size: 5vw; 
+			font-size: 5vw;
 			line-height: 20vw;
 			text-align: center;
 			color: #565656;
-			border: .3rem solid #fff; 
+			border: .3rem solid #fff;
 			border-bottom: none;
 			background-color: #f5c97b;
 		}
@@ -159,7 +159,7 @@
 			color: #fff;
 			font-size: 4vw;
 			font-weight: 600;
-			border: .3rem solid #fff; 
+			border: .3rem solid #fff;
 			border-top: none;
 			background-color: #83b09a;
 		}
@@ -205,6 +205,7 @@
 			text-align: center;
 		}
 		button {
+			cursor: pointer;
 			font-size: 6vw;
 			color: #fff;
 			border: none;
@@ -219,15 +220,12 @@
 		<header>
 			<i class="bg-7_menu2"></i>
 			<div class="head">投票</div>
-			<i class="bg-7_close"></i>
+			<a href="https://yulisaguan.github.io/-CSS-task2/7home.html"><i class="bg-7_close"></i></a>
 			<div class="command">
 				发言讨论结束，大家请投票
 				<i class="bg-7_play"></i>
-				<audio loop="loop" autoplay="autoplay">
-					<source src="财富自由.mp3" type="audio/mpeg" />
-					<source src="财富自由.ogg" type="audio/ogg">
-					<embed height="50" width="50" src="财富自由.mp3">
-				</audio>
+				<embed src="7audio.mp3" width=0 height=50px
+       type="audio/mpeg" loop="true" autostart="true"></embed>
 			</div>
 			<div class="trangle"></div>
 			<p class="tip">点击得票数最多人的头像</p>
@@ -289,7 +287,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<div class="box">
 			<div class="charater">法官</div>
 			<div class="number">4号</div>
@@ -456,9 +454,9 @@
 	<div class="tailwrap"></div>
 	<footer>
 		<div class="btn">
-			<button>投死</button>
+			<button onclick="window.open('https://yulisaguan.github.io/-CSS-task2/7end.html')">投死</button>
 		</div>
 	</footer>
-	
+
 </body>
 </html>
