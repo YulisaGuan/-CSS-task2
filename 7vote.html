@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>Game vote</title>
+	<style type="text/css">
+		body {
+			margin: 0;  
+			background-color: #29bde0;
+		}
+		i {
+			background-image: url(7_2_sprites.png);
+			background-repeat: no-repeat;
+			background-size: 17.8rem 12.8rem;
+		}
+		.bg-7_menu2 {
+			float: left;
+			position: relative;
+			margin: .6rem;
+		    width: 1.7rem; 
+		    height: 1.7rem;
+		    background-position:  -3.2rem -.4rem;
+		    background-size: 7.1rem 5.1rem;
+		}
+		.bg-7_close {
+			float: right;
+			position: relative;
+			margin: .6rem; 
+		    width: 1.6rem; 
+		    height: 1.6rem;
+		    background-position:  -.4rem -3.2rem;
+		    background-size: 7.1rem 5.1rem;
+		}
+
+		.bg-7_play {
+			float: right;
+			position: relative;
+		    width: 2.1rem; 
+		    height: 2.1rem;
+		    margin: .5rem; 
+		    background-position: -.4rem -.4rem;
+		    background-size: 7.1rem 5.1rem;
+		}
+
+		.bg-7_knife {
+			display: inline-block;
+			margin-top: 1vw;
+		    width: 4vw; 
+		    height: 2.7vw;
+		    background-position: -21.2vw -1.5vw;
+		    background-size: 26.7vw 19.2vw;
+		}
+		.bg-7_scope {
+			display: inline-block;
+			margin-top: 1vw;
+		    width: 4vw; 
+		    height: 3vw;
+		    background-position: -20.5vw -7vw;
+		    background-size: 26.7vw 19.2vw;
+		}
+		.bg-7_add {
+			display: inline-block;
+			margin-top: 1vw;
+		    width: 2.3vw; 
+		    height: 2.6vw;
+		    background-position:  -21vw -12.8vw;
+		    background-size: 26.7vw 19.2vw;
+		}
+
+		.bg-7_aim {
+			display: inline-block;
+			margin-top: 1vw;
+		    width: 3.3vw; 
+		    height: 3.3vw;
+		    background-position: -7.6vw -9.9vw;
+		    background-size: 21.2vw 15.4vw;
+		}
+
+		.wrap {
+			width: 100%;
+			height: 9.5rem;
+		}
+		header {
+			position: fixed;
+			width: 100%;
+			height: 9.5rem;
+			background-color: #29bde0;
+			z-index: 99;
+			text-align: center;
+		}
+		.head {
+			display: inline-block;
+			font-size: 1.5rem;
+			line-height: 3rem;
+			color: #fff;
+		}
+
+		.command {
+			width: 100%;
+			height: 3rem;
+			line-height: 3rem;
+			text-indent: 2rem;
+			text-align: left;
+			font-size: 1rem;
+			color: #464646;
+			background-color: #b9e9f5;
+		}
+		.trangle {
+			width: 0;
+			margin-left: 3rem;
+			border-top: .6rem solid #b9e9f5;
+			border-right: .4rem solid transparent;
+			border-left: .4rem solid transparent;
+		}
+		.tip {
+			text-align: left;
+			text-indent: 2.5rem;
+			color: #fff;
+			font-weight: 200;
+			margin: .5rem;
+		}
+
+		.cards {
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-around;
+			margin: 1rem; 
+			width: 100%；
+		}
+
+		.box {
+			float: left;
+			display: flex;
+			flex-flow: column nowrap;
+			justify-content: flex-end;
+			align-items: center; 
+			width: 25vw;
+			height: 38vw;
+
+		}
+		.charater {
+			width: 25vw;
+			height: 20vw;
+			font-size: 5vw; 
+			line-height: 20vw;
+			text-align: center;
+			color: #565656;
+			border: .3rem solid #fff; 
+			border-bottom: none;
+			background-color: #f5c97b;
+		}
+		.number {
+			overflow: hidden;
+			width: 25vw;
+			height: 5vw;
+			line-height: 5vw;
+			text-align: center;
+			color: #fff;
+			font-size: 4vw;
+			font-weight: 600;
+			border: .3rem solid #fff; 
+			border-top: none;
+			background-color: #83b09a;
+		}
+
+		.action {
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: space-between;
+			width: 25vw;
+			height: 5vw;
+			margin-top: 2vw;
+			margin-bottom: 1vw;
+		}
+		.box:hover .icon{
+			display: initial;
+		}
+
+		.icon {
+			display: none;
+			width: 5vw;
+			height: 5vw;
+			background-color: #fff;
+			z-index: 5;
+			text-align: center;
+		}
+
+		.tailwrap {
+			height: 20vw;
+		}
+		footer {
+			position: fixed;
+			bottom: 0;
+			width: 100vw;
+			height: 20vw;
+			background-color: #29bde0;
+			z-index: 99;
+		}
+		.btn {
+			padding-top: 1vw;
+			background-color: #fbb435;
+			height: 10vw;
+			margin: 5vw 10vw;
+			text-align: center;
+		}
+		button {
+			font-size: 6vw;
+			color: #fff;
+			border: none;
+			background: none;
+			outline: none;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<header>
+			<i class="bg-7_menu2"></i>
+			<div class="head">投票</div>
+			<i class="bg-7_close"></i>
+			<div class="command">
+				发言讨论结束，大家请投票
+				<i class="bg-7_play"></i>
+				<audio loop="loop" autoplay="autoplay">
+					<source src="财富自由.mp3" type="audio/mpeg" />
+					<source src="财富自由.ogg" type="audio/ogg">
+					<embed height="50" width="50" src="财富自由.mp3">
+				</audio>
+			</div>
+			<div class="trangle"></div>
+			<p class="tip">点击得票数最多人的头像</p>
+		</header>
+	</div>
+	<div class="cards">
+		<div class="box">
+			<div class="charater">水民</div>
+			<div class="number">1号</div>
+			<div class="action">
+				<div class="icon">
+					<i class="bg-7_knife"></i>
+				</div>
+				<div class="icon">
+					<i class="bg-7_scope"></i>
+				</div>
+				<div class="icon">
+					<i class="bg-7_aim"></i>
+				</div>
+				<div class="icon">
+					<i class="bg-7_add"></i>
+				</div>
+			</div>
+		</div>
+
+		<div class="box">
+			<div class="charater">水民</div>
+			<div class="number">2号</div>
+			<div class="action">
+				<div class="icon">
+					<i class="bg-7_knife"></i>
+				</div>
+				<div class="icon">
+					<i class="bg-7_scope"></i>
+				</div>
+				<div class="icon">
+					<i class="bg-7_aim"></i>
+				</div>
+				<div class="icon">
+					<i class="bg-7_add"></i>
+				</div>
+			</div>
+		</div>
+		<div class="box">
+			<div class="charater">警察</div>
+			<div class="number">3号</div>
+			<div class="action">
+				<div class="icon">
+					<i class="bg-7_knife"></i>
+				</div>
+				<div class="icon">
+					<i class="bg-7_scope"></i>
+				</div>
+				<div class="icon">
+					<i class="bg-7_aim"></i>
+				</div>
+				<div class="icon">
+					<i class="bg-7_add"></i>
+				</div>
+			</div>
+		</div>
+		
+		<div class="box">
+			<div class="charater">法官</div>
+			<div class="number">4号</div>
+			<div class="action">
+				<div class="icon">
+					<i class="bg-7_knife"></i>
+				</div>
+				<div class="icon">
+					<i class="bg-7_scope"></i>
+				</div>
+				<div class="icon">
+					<i class="bg-7_aim"></i>
+				</div>
+				<div class="icon">
+					<i class="bg-7_add"></i>
+				</div>
+			</div>
+		</div>
+		<div class="box">
+			<div class="charater">狙击手</div>
+			<div class="number">5号</div>
+			<div class="action">
+				<div class="icon">
+					<i class="bg-7_knife"></i>
+				</div>
+				<div class="icon">
+					<i class="bg-7_scope"></i>
+				</div>
+				<div class="icon">
+					<i class="bg-7_aim"></i>
+				</div>
+				<div class="icon">
+					<i class="bg-7_add"></i>
+				</div>
+			</div>
+		</div>
+		<div class="box">
+			<div class="charater">医生</div>
+			<div class="number">6号</div>
+			<div class="action">
+				<div class="icon">
+					<i class="bg-7_knife"></i>
+				</div>
+				<div class="icon">
+					<i class="bg-7_scope"></i>
+				</div>
+				<div class="icon">
+					<i class="bg-7_aim"></i>
+				</div>
+				<div class="icon">
+					<i class="bg-7_add"></i>
+				</div>
+			</div>
+		</div>
+		<div class="box">
+			<div class="charater">杀手</div>
+			<div class="number">7号</div>
+			<div class="action">
+				<div class="icon">
+					<i class="bg-7_knife"></i>
+				</div>
+				<div class="icon">
+					<i class="bg-7_scope"></i>
+				</div>
+				<div class="icon">
+					<i class="bg-7_aim"></i>
+				</div>
+				<div class="icon">
+					<i class="bg-7_add"></i>
+				</div>
+			</div>
+		</div>
+		<div class="box">
+			<div class="charater">水民</div>
+			<div class="number">8号</div>
+			<div class="action">
+				<div class="icon">
+					<i class="bg-7_knife"></i>
+				</div>
+				<div class="icon">
+					<i class="bg-7_scope"></i>
+				</div>
+				<div class="icon">
+					<i class="bg-7_aim"></i>
+				</div>
+				<div class="icon">
+					<i class="bg-7_add"></i>
+				</div>
+			</div>
+		</div>
+		<div class="box">
+			<div class="charater">水民</div>
+			<div class="number">9号</div>
+			<div class="action">
+				<div class="icon">
+					<i class="bg-7_knife"></i>
+				</div>
+				<div class="icon">
+					<i class="bg-7_scope"></i>
+				</div>
+				<div class="icon">
+					<i class="bg-7_aim"></i>
+				</div>
+				<div class="icon">
+					<i class="bg-7_add"></i>
+				</div>
+			</div>
+		</div>
+		<div class="box">
+			<div class="charater">水民</div>
+			<div class="number">10号</div>
+			<div class="action">
+				<div class="icon">
+					<i class="bg-7_knife"></i>
+				</div>
+				<div class="icon">
+					<i class="bg-7_scope"></i>
+				</div>
+				<div class="icon">
+					<i class="bg-7_aim"></i>
+				</div>
+				<div class="icon">
+					<i class="bg-7_add"></i>
+				</div>
+			</div>
+		</div>
+		<div class="box">
+			<div class="charater">水民</div>
+			<div class="number">11号</div>
+			<div class="action">
+				<div class="icon">
+					<i class="bg-7_knife"></i>
+				</div>
+				<div class="icon">
+					<i class="bg-7_scope"></i>
+				</div>
+				<div class="icon">
+					<i class="bg-7_aim"></i>
+				</div>
+				<div class="icon">
+					<i class="bg-7_add"></i>
+				</div>
+			</div>
+		</div>
+		<div class="box">
+			<div class="charater">水民</div>
+			<div class="number">12号</div>
+			<div class="action">
+				<div class="icon">
+					<i class="bg-7_knife"></i>
+				</div>
+				<div class="icon">
+					<i class="bg-7_scope"></i>
+				</div>
+				<div class="icon">
+					<i class="bg-7_aim"></i>
+				</div>
+				<div class="icon">
+					<i class="bg-7_add"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tailwrap"></div>
+	<footer>
+		<div class="btn">
+			<button>投死</button>
+		</div>
+	</footer>
+	
+</body>
+</html>
