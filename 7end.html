@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>Victory</title>
+	<style type="text/css">
+		body {
+			margin: 0;  
+			background-color: #29bde0;
+		}
+		i {
+			background-image: url(7_3_sprites.png);
+			background-repeat: no-repeat;
+			background-size: 13.3rem 6.2rem;
+		}
+		.bg-7_msg {
+			float: right;
+			position: relative;
+			margin: .9rem; 
+		    width: 1.8rem; 
+		    height: 1.8rem;
+		    background-position:  -3.8rem -.4rem;
+		    background-size:  6rem 2.6rem;
+		}
+		.bg-7_home {
+			float: left;
+			position: relative;
+			margin: .8rem;
+		    width: 2rem; 
+		    height: 1.7rem;
+		    background-position:  -.4rem -.4rem;
+		    background-size:  5.3rem 2.5rem;
+		}
+
+
+		.wrap {
+			width: 100%;
+			height: 3.5rem;
+		}
+		
+		header {
+			position: fixed;
+			z-index: 99;
+			width: 100%;
+			height: 3.5rem;
+			line-height: 3.8rem;
+			text-align: center;
+			border-bottom: 1px solid #74d4eb;
+			background-color: #29bde0;
+		}
+		.head {
+			display: inline-block;
+			font-size: 1.5rem;
+			line-height: 3rem;
+			color: #fff;
+		}
+		img {
+			display: block;
+			margin: 1rem auto;
+			width: 50vw;
+			text-align: center;
+		}
+		.praise {
+			margin: 2rem 4rem;
+			color: #ffc865;
+			text-align: justify;
+			font-size: 1.2rem; 
+			font-weight: 600;
+		}
+		.time {
+			margin: 0 4rem;
+			color: #fff;
+			text-align: justify;
+			font-size: 1rem; 
+			font-weight: 300;
+			letter-spacing: 1px;
+		}
+		.summerize {
+			margin: 0 4rem;
+			margin-bottom: 3rem;
+		}
+		.summerize p {
+			display: inline-block;
+			float: left;
+			width: 25vw;
+			color: #fff;
+			margin: 0;
+			line-height: 1.5rem;
+			letter-spacing: 1px;
+			font-weight: 300;
+			font-size: 1rem;
+		}
+		.clear {
+			clear: both;
+		}
+		.voc {
+			margin: 0 4rem;
+			overflow: hidden;
+			color: #fff;
+			letter-spacing: 1.5px;
+			font-weight: 300;
+			font-size: 1rem;
+		}
+		.detail {
+			width: 84vw;
+			padding: 2vw 8vw 4vw 8vw;
+			background-color: #fff;
+			border: 1px solid #ddd;
+		}
+		.cont {
+			margin-bottom: 1rem;
+		}
+		.state {
+			margin-top: 2rem;
+			font-size: 1rem;
+			color: #a6a6a6;
+		}
+		.state p {
+			margin: 0;
+		}
+		.day {
+			float: left;
+			font-size: 1.2rem;
+			color: #515151;
+		}
+		.during {
+			float: right;
+			font-size: 1rem;
+			color: #c7c7c7;
+		}
+
+
+		footer {
+			position: fixed;
+			left: 0;
+			bottom: 0;		
+			display: flex;
+			flex-wrap: nowrap;
+			width: 100%;	
+			height: 6rem;
+			background-color: rgba(41,189,224,.5);
+
+
+		}
+		button {
+			flex-grow: 2;
+			flex-basis: 0%;
+			margin: 1rem;
+			border-radius: 1rem;
+			border: none;
+			font-size: 1.2rem;
+			outline: none;
+
+		}
+
+		.again-btn {
+			color: #fff;
+			background-color: #f66f6f;
+		}
+		.upload-btn {
+			color: #fff;
+			background-color: #fbb435;
+		}
+
+
+
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<header>
+			<i class="bg-7_home"></i>
+			<div class="head">游戏结果</div>
+			<i class="bg-7_msg"></i>
+		</header>
+	</div>
+	<img src="7-victory.png">
+		
+	<p class="praise">太棒了！你知道么？在捉鬼游戏中只有20%的卧底取得游戏的最终胜利哦！</p>
+	<div class="cont">
+		<p class="time">本次游戏共计用时0小时25分钟</p>
+		<div class="summerize">
+			<p>杀手0人</p>
+			<p>警察1人</p>
+			<p>平民6人</p>
+			<p>狙击手0人</p>
+			<p>医生1人</p>
+		</div>
+		<p class="clear voc">卧底词汇：爱新觉罗</p>
+		<p class="voc">水民词汇：努尔哈赤</p>
+	</div>
+
+	<div class="detail">
+		<div class="day">第1天</div>
+		<div class="during">0小时07分</div>
+		<div class="state">
+			<p>晚上：5号被杀手杀死，5号是水民</p>
+			<p>白天：8号被全民投票投死，8号是杀手</p>
+		</div>
+	</div>
+	<div class="detail">
+		<div class="day">第2天</div>
+		<div class="during">0小时07分</div>
+		<div class="state">
+			<p>晚上：5号被杀手杀死，5号是水民</p>
+			<p>白天：8号被全民投票投死，8号是杀手</p>
+		</div>
+	</div>
+	<div class="detail">
+		<div class="day">第3天</div>
+		<div class="during">0小时07分</div>
+		<div class="state">
+			<p>晚上：5号被杀手杀死，5号是水民</p>
+			<p>白天：8号被全民投票投死，8号是杀手</p>
+		</div>
+	</div>
+
+	<footer>
+		<button class="again-btn">再来一局</button>
+		<button class="upload-btn">上传并分享</button>
+	</footer>
+
+
+</body>
+</html>
