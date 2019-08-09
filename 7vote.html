@@ -45,7 +45,6 @@
 
 		.bg-7_knife {
 				display: inline-block;
-				margin-top: 1vw;
 		    width: 4vw;
 		    height: 2.7vw;
 		    background-position: -21.2vw -1.5vw;
@@ -53,7 +52,6 @@
 		}
 		.bg-7_scope {
 				display: inline-block;
-				margin-top: 1vw;
 		    width: 4vw;
 		    height: 3vw;
 		    background-position: -20.5vw -7vw;
@@ -61,7 +59,6 @@
 		}
 		.bg-7_add {
 				display: inline-block;
-				margin-top: 1vw;
 		    width: 2.3vw;
 		    height: 2.6vw;
 		    background-position:  -21vw -12.8vw;
@@ -70,10 +67,9 @@
 
 		.bg-7_aim {
 				display: inline-block;
-				margin-top: 1vw;
-		    width: 3.3vw;
+		    width: 3.5vw;
 		    height: 3.3vw;
-		    background-position: -7.6vw -9.9vw;
+		    background-position: -7.7vw -9.9vw;
 		    background-size: 21.2vw 15.4vw;
 		}
 
@@ -174,16 +170,18 @@
 			margin-bottom: 1vw;
 		}
 		.box:hover .icon{
-			display: initial;
+			display: flex;
 		}
 
 		.icon {
 			display: none;
+			text-align: center;
+			align-items: center;
+			justify-content: center;
 			width: 5vw;
 			height: 5vw;
 			background-color: #fff;
 			z-index: 5;
-			text-align: center;
 		}
 
 		.tailwrap {
@@ -193,21 +191,21 @@
 			position: fixed;
 			bottom: 0;
 			width: 100vw;
-			height: 20vw;
+			height: 18vw;
 			background-color: #29bde0;
 			z-index: 99;
 		}
 		.btn {
-			padding-top: 1vw;
+			color: #fff;
 			background-color: #fbb435;
-			height: 10vw;
-			margin: 5vw 10vw;
-			text-align: center;
 		}
 		button {
 			cursor: pointer;
+			width: 80vw;
+			height: 10vw;
+			margin: 4vw 10vw;
+			text-align: center;
 			font-size: 6vw;
-			color: #fff;
 			border: none;
 			background: none;
 			outline: none;
@@ -453,9 +451,9 @@
 	</div>
 	<div class="tailwrap"></div>
 	<footer>
-		<a href="https://yulisaguan.github.io/-CSS-task2/7end.html"><div class="btn">
-			<button>投死</button>
-		</div></a>
+		<div class="btn">
+			<button class="btn" onclick="window.open('https://yulisaguan.github.io/-CSS-task2/7end.html')">投死</button>
+		</div>
 	</footer>
 
 </body>
