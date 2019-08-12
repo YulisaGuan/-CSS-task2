@@ -86,15 +86,6 @@ i {
     background-position: -523px -108px;
 }
 
-.bg_8-next {
-    width: 27px;
-    height: 47px;
-    background-position: -179px -173px;
-}
-.bg_8-pred {
-    transform: rotateY(180deg);
-}
-
 .bg_8-right {
     width: 32px;
     height: 30px;
@@ -139,18 +130,14 @@ i {
     margin: .3rem;
     height: 26px;
 }
-.clear {
-    clear: both;
-}
 header {
-
     margin: 0 15vw;
     height: 35px;
 }
 .contact {
     display: inline-block;
     color: #29b078;
-    font-size: 1vw;
+    font-size: .8vw;
     line-height: 35px;
 }
 .pages {
@@ -163,21 +150,21 @@ header {
     right: 0;
     position: absolute;
     padding: 0;
-    margin: 0 13.5vw; 
+    margin: 0 13.5vw;
     line-height: 80px;
     text-align: center;
 }
-.pages ul.pagenav li {
+.pagenav li {
     display: inline-block;
     list-style-type: none;
     width: 80px;
     height: 80px;
 }
-.pages ul.pagenav li a {
+.pagenav li a {
     color: #fff;
     text-decoration:none;
 }
-.pages ul.pagenav li:hover, ul.pagenav li:focus {
+.pagenav li:hover, .pagenav li:focus {
     border-bottom: 4px solid #fff;
 }
 img {
@@ -208,7 +195,7 @@ img {
 }
 .element p{
     display: inline-block;
-    padding: 0 2rem; 
+    padding: 0 2rem;
     color: #999;
     text-align: justify;
     margin: 0 auto;
@@ -232,7 +219,7 @@ img {
     padding-left: 1rem;
     line-height: 2rem;
     font-weight: 600;
-    font-size: 1.8rem; 
+    font-size: 1.8rem;
 }
 .wrap {
     position: absolute;
@@ -247,7 +234,7 @@ img {
 .how-sub {
     margin: 2vw 14vw;
     display: flex;
-    flex-flow: row wrap; 
+    flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -278,7 +265,7 @@ img {
     flex-flow: column nowrap;
     justify-content: space-between;
     align-items: center;
-    padding: 20px; 
+    padding: 20px;
     width: 15vw;
     box-shadow: 0 0 5px #dedede;
 }
@@ -303,7 +290,7 @@ img {
 #carousel-elite .carousel-indicators .active{
     background-color: #29b078;
     box-shadow: none;
-    border: none; 
+    border: none;
 }
 .company {
     display: flex;
@@ -318,7 +305,7 @@ img {
     align-items: center;
     height: 12rem;
     border-bottom-style: inset;
-    background-color: #fff; 
+    background-color: #fff;
 }
 .substrate:hover {
     z-index: 5;
@@ -342,8 +329,8 @@ img {
     content: "";
     display: inline-block;
     margin-right: 7px;
-    width:5px;
-    height:5px;
+    width: 5px;
+    height: 5px;
     background-color: #999;
     vertical-align: middle;
     border-radius: 100%;
@@ -356,13 +343,13 @@ img {
     color: #999;
 }
 .links ul li:hover {
-    border-bottom: 1px solid #29b078; 
+    border-bottom: 1px solid #29b078;
 }
 .promotion {
     height: 13rem;
-    padding: 2vw 14vw;
+    padding: 2rem 14vw;
     color: #fff;
-    background-color: #29b078; 
+    background-color: #29b078;
 }
 .webs {
     float: left;
@@ -370,7 +357,7 @@ img {
     flex-flow: row nowrap;
     justify-content: space-between;
     align-content: center;
-    width: 60%;
+    width: 50%;
 }
 .more {
     display: flex;
@@ -382,11 +369,11 @@ img {
 .more span a {
     color: #fff;
     text-decoration: none;
-    padding-bottom: 5px; 
+    padding-bottom: 5px;
 }
 
 .more span a:hover {
-    border-bottom: 1px solid #fff; 
+    border-bottom: 1px solid #fff;
 }
 .us {
     display: flex;
@@ -397,32 +384,34 @@ img {
 }
 .split {
     border-left: 2px solid #fff;
-    border-right: 2px solid #fff; 
+    border-right: 2px solid #fff;
     padding: 0 .7rem;
 }
 .others {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
-    line-height: 3rem;
+}
+.others span {
+  padding-bottom: 1.5rem;
 }
 
 .under {
-    display: inline-block;
-    float: left;
-    width: 18vw;
-    color: #fff;    
+    width: 19rem;
 }
 .under span {
-    padding-right: 2rem;
+    display: inline-block;
+    float: left;
+    padding: 0 2rem  1.5rem 0;
+    color: #fff;
 }
 .under span a {
     color: #fff;
     text-decoration: none;
-    padding-bottom: 5px; 
+    padding-bottom: 5px;
 }
 .under span a:hover {
-    border-bottom: 1px solid #fff; 
+    border-bottom: 1px solid #fff;
 }
 
 .wx {
@@ -431,7 +420,6 @@ img {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    line-height: 2rem;
 }
 
 footer {
@@ -439,6 +427,6 @@ footer {
     height: 30px;
     line-height: 30px;
     border-top: 1px solid #32c086;
-    color: #fff;
-    background-color: #29b078; 
+    color: #32c086;
+    background-color: #29b078;
 }
