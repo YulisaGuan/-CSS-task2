@@ -5,15 +5,14 @@ i {
     background: url(8_2_sprites.png) no-repeat;
 }
 .bg-8_ewm {
-    width: 92px; 
+    width: 92px;
     height: 92px;
     background-position: -1px -1px;
 }
 .bg-8_tudou {
-    position: relative;
     float: left;
-    margin: 3rem 5rem;
-    width: 124px; 
+    margin: 2rem 5rem;
+    width: 124px;
     height: 42px;
     background-position: -1px -95px;
 }
@@ -22,26 +21,26 @@ i {
     position: relative;
     top: .8vw;
     margin: 0 15vw;
-    width: 111px; 
+    width: 111px;
     height: 52px;
     background-position: -95px -1px;
 }
 .bg-8_wb {
     float: right;
-    width: 26px; 
+    width: 26px;
     height: 26px;
     background-position: -124px -55px;
 }
 .bg-8_wx {
     float: right;
-    width: 26px; 
+    width: 26px;
     height: 26px;
     background-position: -152px -55px;
 }
 .bg-8_qq {
     float: right;
     margin: 0 1rem 0 1rem;
-    width: 27px; 
+    width: 27px;
     height: 26px;
     background-position: -95px -55px;
 }
@@ -72,7 +71,7 @@ header {
     right: 0;
     position: absolute;
     padding: 0;
-    margin: 0 13.5vw; 
+    margin: 0 13.5vw;
     line-height: 80px;
     text-align: center;
 }
@@ -99,7 +98,7 @@ img {
     margin: 1vw 14vw;
 }
 .level span {
-	color: #29b078; 
+	color: #29b078;
 }
 .clear {
     clear: both;
@@ -120,11 +119,11 @@ img {
     border-bottom: 1px solid #dedede;
 }
 .cop ul {
-    margin: 1vw 0 1vw 4.8vw; 
+    margin: 1vw 0 1vw 4.8vw;
 
      padding: 0;
      line-height: 2vw;
-     color: #29b078; 
+     color: #29b078;
      list-style: none;
 }
 
@@ -153,35 +152,33 @@ img {
     margin-bottom: 10rem;
 }
 .abstract {
-    float: left;
     padding: 2rem 3rem;
     border-bottom: 1px solid #dedede;
 }
 .intro {
+    overflow: hidden;
     color: #999;
-    margin: 2rem;
-    line-height: 2rem;
-    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-size: 1.6rem;
     text-align: justify;
 }
 .content {
-    color: #999;
     padding: 2rem 3rem 6rem 3rem;
-    font-size: 1.5rem;
 }
 .content p {
     margin: 2rem;
     text-align: justify;
     text-indent: 2.5rem;
+    color: #999;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
 }
-
-
 
 .promotion {
     height: 13rem;
     padding: 2rem 14vw 0 14vw;
     color: #fff;
-    background-color: #29b078; 
+    background-color: #29b078;
 }
 .webs {
     float: left;
@@ -202,11 +199,11 @@ img {
 .more span a {
     color: #fff;
     text-decoration: none;
-    padding-bottom: 5px; 
+    padding-bottom: 5px;
 }
 
 .more span a:hover {
-    border-bottom: 1px solid #fff; 
+    border-bottom: 1px solid #fff;
 }
 .us {
     display: flex;
@@ -217,7 +214,7 @@ img {
 }
 .split {
     border-left: 2px solid #fff;
-    border-right: 2px solid #fff; 
+    border-right: 2px solid #fff;
     padding: 0 .7rem;
 }
 .others {
@@ -232,16 +229,16 @@ img {
 
 .under span {
     display: inline-block;
-    color: #fff;   
-    padding: 0 1.1vw 1vw 0  
+    color: #fff;
+    padding: 0 1.1vw 1vw 0
 }
 .under span a {
     color: #fff;
     text-decoration: none;
-    padding-bottom: 5px; 
+    padding-bottom: 5px;
 }
 .under span a:hover {
-    border-bottom: 1px solid #fff; 
+    border-bottom: 1px solid #fff;
 }
 
 .wx {
@@ -259,5 +256,5 @@ footer {
     line-height: 30px;
     border-top: 1px solid #32c086;
     color: #32c086;
-    background-color: #29b078; 
+    background-color: #29b078;
 }
