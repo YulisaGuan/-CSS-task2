@@ -271,11 +271,12 @@ img {
 }
 .person h4{
     padding: 1.5rem;
+    font-size: 1.1vw;
 }
 .intro {
     text-align: justify;
     width: 11vw;
-    font-size: 1.6rem;
+    font-size: 1vw;
     line-height: 2rem;
     color: #999;
 }
@@ -347,7 +348,7 @@ img {
 }
 .promotion {
     height: 13rem;
-    padding: 2rem 14vw;
+    padding: 2rem 14vw 0 14vw;
     color: #fff;
     background-color: #29b078;
 }
@@ -357,14 +358,15 @@ img {
     flex-flow: row nowrap;
     justify-content: space-between;
     align-content: center;
-    width: 50%;
+    font-size: .9vw;
+    width: 40vw;
 }
 .more {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
     align-items: flex-start;
-    height: 95px;
+    height: 5.5vw;
 }
 .more span a {
     color: #fff;
@@ -391,18 +393,15 @@ img {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
+    width: 16.5vw;
 }
 .others span {
   padding-bottom: 20px;
 }
 
-.under {
-    width: 19rem;
-}
 .under span {
     display: inline-block;
-    float: left;
-    padding: 0 25px  20px 0;
+    padding: 0 1.1vw 11vw 0;
     color: #fff;
 }
 .under span a {
@@ -420,6 +419,7 @@ img {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    font-size: .8vw;
 }
 
 footer {
