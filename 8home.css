@@ -29,7 +29,8 @@ i {
     background-position: -324px -0;
 }
 
-.bg_8-ewm {
+.bg-8_ewm {
+    float: right;
     width: 92px;
     height: 92px;
     background-position: -432px -0;
@@ -86,10 +87,24 @@ i {
     background-position: -523px -108px;
 }
 
+.bg_8-next {
+    width: 27px;
+    height: 47px;
+    background-position: -179px -173px;
+}
+.bg_8-pred {
+    transform: rotateY(180deg);
+}
+
 .bg_8-right {
     width: 32px;
     height: 30px;
     background-position: -206px -173px;
+}
+.tishen {
+    width: 32px;
+    height: 30px;
+    background-color: transparent;
 }
 
 .bg_8-wb {
@@ -140,46 +155,51 @@ header {
     font-size: .8vw;
     line-height: 35px;
 }
-.pages {
+.icon-bar{border: 1px solid #fff;}
+.navbar-default {
+  background-image: linear-gradient(to bottom, #29b078 0%, #29b078 100%);
+  border:none !important;
+}
+.navbar-default .navbar-nav>li>a {
+    padding-bottom: 25px;
+    color: #fff !important;
+}
+.navbar-default .navbar-nav > li.active,
+.navbar-default .navbar-nav li:hover {
+  background-image: linear-gradient(to bottom, #29b078 0%, #29b078 100%);
+  border-bottom: 3px solid #fff;
+}
+.navbar-default .navbar-nav > .active > a {
+  color: #fff !important;
+  background-color: #29b078 !important;
+}
+.navbar {
+  height: 80px;
+  padding-bottom: 0 !important;
+  margin: 0 !important;
+}
+.navbar ul {
+    margin-right: 11vw;
+    margin-left: 11vw;
+    margin-top: 16px;
+}
+.navbar-collapse {
+  float: right;
+  padding: 0 50px;
+  border: none !important;
+}
+.navbar-responsive-collapse {
     width: 100%;
-    height: 80px;
+    text-align: center;
     background-color: #29b078;
 }
+.navbar-responsive-collapse li{padding: 0 1.5vw;}
+.navbar-toggle {margin-top: 25px !important;}
 
-.pages ul {
-    right: 0;
-    position: absolute;
-    padding: 0;
-    margin: 0 13.5vw;
-    line-height: 80px;
-    text-align: center;
-}
-.pagenav li {
-    display: inline-block;
-    list-style-type: none;
-    width: 80px;
-    height: 80px;
-}
-.pagenav li a {
-    color: #fff;
-    text-decoration:none;
-}
-.pagenav li:hover, .pagenav li:focus {
-    border-bottom: 4px solid #fff;
-}
-img {
-    width: 100vw;
-}
-.advantages {
-    display: flex;
-    flex-flow: row nowrap;
-    margin: 8rem 14vw 0 14vw;
-}
-.element {
-    width: 20vw;
-    text-align: center;
-    padding: 0 3rem;
-}
+img {width: 100vw;}
+
+.advantages {margin: 8rem 14vw 0 14vw;}
+.element {text-align: center;}
 .icon {
     display: flex;
     flex-flow: column nowrap;
@@ -193,23 +213,32 @@ img {
     margin: 25px;
     font-weight: 700;
 }
-.element p{
+.element p {
     display: inline-block;
     padding: 0 2rem;
+    font-size: 1.5rem;
     color: #999;
     text-align: justify;
-    margin: 0 auto;
-
 }
 .line {
-    width: .1vw;
+    float: left;
+    width: 2px;
+    height: 200px;
     background: repeating-linear-gradient(0deg,#fff,#fff 3px,#dedede,#dedede 20px);
 }
-
+@media(max-width: 578px) {
+    .line {
+        width: 100%;
+        margin: 30px 0;
+        height: 2px;
+        background: repeating-linear-gradient(90deg,#fff,#fff 3px,#dedede,#dedede 20px);
+    }
+}
 .amount {
+    float: left;
     position: relative;
-    padding: 0 4rem;
-    width: 18vw;
+    padding: 5rem 0 0 4rem;
+    width: 90%;
     color: #999;
     line-height: 2.5rem;
     font-size: 1.5rem;
@@ -221,28 +250,29 @@ img {
     font-weight: 600;
     font-size: 1.8rem;
 }
-.wrap {
-    position: absolute;
-    top: 20%;
-}
+
 .subtitle {
-    margin: 8rem auto 0 auto;
-    padding: 0 3rem;
+    margin: 7rem auto 2rem auto;
     text-align: center;
 }
 
-.how-sub {
-    margin: 2vw 14vw;
+.bt-wrap {
+    margin: 3vw 14vw;
+}
+.steps {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    flex-flow: row nowrap;
+    justify-content: space-around;
     align-items: center;
+    color: #999;
+    padding: 2rem 0;
 }
 .number {
-    width: 3.5vw;
-    height: 3.5vw;
+    display: inline-block;
+    width: 3.5rem;
+    height: 3.5rem;
     text-align: center;
-    line-height: 3.5vw;
+    line-height: 3.5rem;
     font-size: 2rem;
     color: #29b078;
     border-radius: 50%;
@@ -250,41 +280,31 @@ img {
     background-color: #fff;
 }
 .step {
-    width: 13rem;
-    padding: 0 .1vw;
-    color: #999;
+    width: 11rem;
 }
-.elite {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    margin: 3vw 14vw;
-}
+
 .person {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    width: 15vw;
+    padding: 3rem;
     box-shadow: 0 0 5px #dedede;
 }
 .person h4{
-    padding: 1.5rem;
+    padding: 1.1rem 0;
     font-size: 1.1vw;
 }
 .intro {
     text-align: justify;
-    width: 11vw;
     font-size: 1vw;
     line-height: 2rem;
     color: #999;
 }
 #carousel-elite .carousel-indicators {
-    bottom: 0px;
+    bottom: -25px;
 }
 #carousel-elite .carousel-indicators li {
-
     background-color: #fff;
     box-shadow: 0 2px 2px #dedede;
 }
@@ -293,10 +313,20 @@ img {
     box-shadow: none;
     border: none;
 }
+
+
 .company {
     display: flex;
     flex-flow: row nowrap;
     margin: 2vw 14vw;
+}
+@media (max-width: 578px) {
+    .company {
+        display: flex;
+        flex-flow: column nowrap;
+        margin: 2vw 14vw;
+        height: 60rem;
+    }
 }
 .substrate {
     flex-grow:1;
@@ -312,120 +342,68 @@ img {
     z-index: 5;
     box-shadow: 0 0 5px #dedede;
 }
+
 .links {
-    margin: 8rem 14vw 0 14vw;
+    margin: 0 6vw;
     background-color: #fff;
 }
-.links h4 {
-    margin: 2rem auto;
-    text-align: center;
+.links [class*="col-"] {
+    padding: 10px 0;
 }
-.links ul {
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
-    margin: 15px 0;
-}
-.links ul li::before {
+
+.links span::before {
     content: "";
     display: inline-block;
     margin-right: 7px;
-    width: 5px;
-    height: 5px;
+    width:5px;
+    height:5px;
     background-color: #999;
     vertical-align: middle;
     border-radius: 100%;
 }
-.links ul li {
-    list-style: none;
-}
-.links ul li a {
+
+.links span a {
     text-decoration: none;
     color: #999;
 }
-.links ul li:hover {
+.links [class*="col-"] a:hover {
     border-bottom: 1px solid #29b078;
 }
+
+
+.tailwrap {
+    width: 100%;
+    background-color: #29b078;
+}
 .promotion {
-    height: 13rem;
-    padding: 2rem 14vw 0 14vw;
+    width: 74vw;
+    margin: 0 13vw;
     color: #fff;
     background-color: #29b078;
 }
-.webs {
-    float: left;
+.web {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
-    align-content: center;
-    font-size: .9vw;
-    width: 40vw;
+    justify-content: flex-start;
 }
-.more {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    height: 5.5vw;
+.promotion [class*="col-"] {
+    padding: 8px 15px;
 }
-.more span a {
+.promotion [class*="text-"] {
+    padding: 0 15px;
+}
+.promotion span a,.promotion [class*="col-"] a{
     color: #fff;
     text-decoration: none;
     padding-bottom: 5px;
 }
-
-.more span a:hover {
+.promotion span a:hover,.promotion [class*="col-"] a:hover{
     border-bottom: 1px solid #fff;
-}
-.us {
-    display: flex;
-    justify-content: space-between;
-    width: 110%;
-    height: 16px;
-    line-height: 16px;
-}
-.split {
-    border-left: 2px solid #fff;
-    border-right: 2px solid #fff;
-    padding: 0 .7rem;
-}
-.others {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-between;
-    width: 16.5vw;
-}
-.others span {
-  padding-bottom: 20px;
-}
-
-.under span {
-    display: inline-block;
-    padding: 0 1.1vw 11vw 0;
-    color: #fff;
-}
-.under span a {
-    color: #fff;
-    text-decoration: none;
-    padding-bottom: 5px;
-}
-.under span a:hover {
-    border-bottom: 1px solid #fff;
-}
-
-.wx {
-    float: right;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    font-size: .8vw;
 }
 
 footer {
     text-align-last: center;
-    height: 30px;
-    line-height: 30px;
+    width: 100%;
     border-top: 1px solid #32c086;
     color: #32c086;
     background-color: #29b078;
