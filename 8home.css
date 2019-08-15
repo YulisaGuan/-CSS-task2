@@ -403,6 +403,7 @@ img {width: 100vw;}
 
 footer {
     text-align-last: center;
+    width: 100%;
     border-top: 1px solid #32c086;
     color: #32c086;
     background-color: #29b078;
