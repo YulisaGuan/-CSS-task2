@@ -121,7 +121,7 @@ header {
     float: left;
 }
 .sort {
-    margin: 5vw 14vw;
+    margin: 2rem 14vw;
     border-top: 1px solid #999;
     border-bottom: 1px solid #dedede;
 }
