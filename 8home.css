@@ -431,13 +431,13 @@ img {width: 100vw;}
     margin: 0 14vw;
     background-color: #fff;
 }
-.links span {
-        display: inline-block;
-        padding: 10px 0;
-        white-space: nowrap;
-        text-align: center;
-    }
-.links span::before {
+.link-wrap {
+    display: inline-block;
+    padding: 5px 0;
+    text-align: center;
+}
+
+.link-wrap span::before {
     content: "";
     display: inline-block;
     margin-right: 7px;
@@ -447,22 +447,26 @@ img {width: 100vw;}
     vertical-align: middle;
     border-radius: 100%;
 }
+.link-wrap span {
+    padding: 6px 0;
+    white-space: nowrap;
+}
 
-.links span a {
+.link-wrap span a {
     text-decoration: none;
     color: #999;
 }
-.links span:hover {border-bottom: 1px solid #29b078; }
+.link-wrap span:hover {border-bottom: 1px solid #29b078; }
 
 
 .tailwrap {
     width: 100%;
-    background-color: #29b078;
+    background-color: #29b078;    
 }
 .promotion {
-    margin: 0 13vw;
+    margin: 0 13vw; 
     color: #fff;
-    background-color: #29b078;
+    background-color: #29b078;    
 }
 .us {
     float: left;
@@ -482,15 +486,16 @@ img {width: 100vw;}
 .wx {
     position: relative;
 }
-.us span a,.webs a{
+.us span a, .web span a {
     color: #fff;
     text-decoration: none;
-    padding-bottom: 5px;
+    padding-bottom: 5px; 
     white-space: nowrap;
 }
-.us span a:hover,.webs a:hover{
-    border-bottom: 1px solid #fff;
+.us span a:hover,.web a:hover{
+    border-bottom: 1px solid #fff; 
 }
+
 
 footer {
     text-align: center;
