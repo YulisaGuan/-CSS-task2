@@ -196,7 +196,7 @@ header {
     background-color: #29b078;
 }
 .navbar-toggle {
-    right: 0;
+    right: 12vw;
     margin-top: 15px !important;
 }
 
