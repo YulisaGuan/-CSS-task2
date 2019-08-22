@@ -13,7 +13,7 @@ i {
 }
 .bg-8_ewm {
     float: left;
-    width: 92px;
+    width: 92px; 
     height: 92px;
     background-position: -139px -0;
 }
@@ -198,7 +198,7 @@ header {
 
 .sortelement a:hover, .active {
     color: #fff;
-    background-color: #29b078;
+    background-color: #29b078; 
     text-decoration: none;
 }
 .sortelement a {
@@ -215,12 +215,12 @@ header {
 }
 
 .bt-wrap {
-    margin: 0 12vw;
+    margin: 0 12vw; 
 }
 .job {
     position: relative;
     float: left;
-    margin: 15px 0;
+    margin: 15px 0; 
 }
 .inner {
     box-shadow: 0 2px 2px #999;
@@ -234,7 +234,7 @@ header {
 .exp {
     position: absolute;
     height: 100%;
-    padding: 10% 4%;
+    padding: 10% 4%; 
     margin: 0 2vw;
     text-indent: 2.5rem;
     font-size: 1.6rem;
@@ -249,10 +249,10 @@ header {
     text-align: center;
     margin-bottom: 2rem;
     text-indent: 0;
-}
+} 
 table tr td {
     border:1px solid  #dedede;
-    padding: 5px 10px;
+    padding: 5px 8px;
 }
 table th {
     font-size: 1.8rem;
@@ -313,10 +313,11 @@ table {
 .us span a:hover,.web a:hover{
     border-bottom: 1px solid #fff; 
 }
+
 footer {
     text-align: center;
     width: 100%;
     border-top: 1px solid #32c086;
     color: #fff;
-    background-color: #29b078;
+    background-color: #29b078; 
 }
