@@ -6,14 +6,14 @@ i {
 }
 .bg-8_ewm {
     float: left;
-    width: 92px;
+    width: 92px; 
     height: 92px;
     background-position: -1px -1px;
 }
 .bg-8_tudou {
     display: inline-block;
     margin: 2rem 0;
-    width: 124px;
+    width: 124px; 
     height: 42px;
     background-position: -1px -95px;
 }
@@ -21,7 +21,7 @@ i {
     float: left;
     position: relative;
     margin: 0 14vw;
-    width: 111px;
+    width: 111px; 
     height: 52px;
     background-position: -95px -1px;
 }
@@ -103,7 +103,7 @@ header {
 @media (min-width: 768px) {
     .columns {
         width: 24%;
-        margin-right: 10px;
+        margin-right: 10px; 
     }
     .box-s {
         width: 72%;
@@ -115,14 +115,14 @@ header {
         float: right;
         width: 19%;
     }
-    .abstract {flex-flow: row nowrap;}
-    .intro {margin-left: 2rem;}
+    .abstract {flex-flow: column nowrap;}
+    .intro {margin-left: 0;}
 }
 
 @media (min-width: 992px) {
     .columns {
         width: 24%;
-        margin-right: 10px;
+        margin-right: 10px; 
     }
     .box-s {
         width: 72%;
@@ -141,7 +141,7 @@ header {
 @media (min-width: 1200px) {
     .columns {
         width: 24%;
-        margin-right: 10px;
+        margin-right: 10px; 
     }
     .box-s {
         width: 72%;
@@ -155,7 +155,7 @@ header {
     }
     .abstract {flex-flow: row nowrap;}
     .intro {margin-left: 2rem;}
-
+    
 }
 
 .icon-bar{border: 1px solid #fff;}
@@ -216,7 +216,7 @@ img {
 
 .main {
     width: 72vw;
-    margin: 0 14vw 5vw 14vw;
+    margin: 0 14vw 5vw 14vw; 
 }
 .columns, .box-s{
     float: left;
@@ -232,10 +232,10 @@ img {
 .columns li {width: 90px;}
 .columns ul {
     width: 90px;
-    margin: 1rem auto;
+    margin: 1rem auto; 
     padding: 0;
     line-height: 3rem;
-    color: #29b078;
+    color: #29b078; 
     list-style: none;
 }
 .columns ul li::before {
@@ -255,9 +255,9 @@ img {
     padding: 2rem 2rem;
     border-bottom: 1px solid #dedede;
     display: flex;
-
+    
     justify-content: space-around;
-    align-items: center;
+    align-items: center; 
 }
 .tudolg {
     float: left;
@@ -308,13 +308,13 @@ img {
 .wx {
     position: relative;
 }
-.us span a, .web span a {
+.us span a,.webs a{
     color: #fff;
     text-decoration: none;
     padding-bottom: 5px; 
     white-space: nowrap;
 }
-.us span a:hover,.web a:hover{
+.us span a:hover,.webs a:hover{
     border-bottom: 1px solid #fff; 
 }
 
@@ -323,5 +323,5 @@ footer {
     width: 100%;
     border-top: 1px solid #32c086;
     color: #fff;
-    background-color: #29b078;
+    background-color: #29b078; 
 }
