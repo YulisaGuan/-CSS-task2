@@ -308,13 +308,13 @@ img {
 .wx {
     position: relative;
 }
-.us span a,.webs a{
+.us span a, .web span a {
     color: #fff;
     text-decoration: none;
     padding-bottom: 5px; 
     white-space: nowrap;
 }
-.us span a:hover,.webs a:hover{
+.us span a:hover,.web a:hover{
     border-bottom: 1px solid #fff; 
 }
 
