@@ -164,13 +164,12 @@ header {
     line-height: 35px;
 }
 
-
 @media(max-width: 576px) {
     header .contact {display: none;}
     .line {display: none;}
     .element, .steps, .person {min-width: 100%;}
     .tishen {opacity: 1;}
-    .links span {width: 49%;}
+    .link-wrap {width: 49%;}
     .wx {
         line-height: 3rem;
         float: left;
@@ -182,7 +181,7 @@ header {
 @media (min-width: 576px) {
     .element, .steps, .person {width: 48%;}
     .tishen {opacity: 1;}
-    .links span {width: 24%;}
+    .link-wrap {width: 24%;}
     .us, .webs {width: 100%;}
     .wx {
         line-height: 3rem;
@@ -193,13 +192,13 @@ header {
         clear: both;
     }
 
-
+    
 }
 
 @media (min-width: 768px) {
     .element, .steps, .person {width: 49%;}
     .tishen {opacity: 1;}
-    .links span {width: 19%;}
+    .link-wrap {width: 19%;}
     .us, .webs {width: 40%;}
     .wx {
         line-height: 3rem;
@@ -216,7 +215,7 @@ header {
 @media (min-width: 992px) {
     .element, .steps, .person {width: 49%;}
     .tishen {opacity: 1;}
-    .links span {width: 19%;}
+    .link-wrap {width: 19%;}
     .us, .webs {width: 40%;}
     .wx {
         line-height: 3rem;
@@ -229,7 +228,7 @@ header {
 @media (min-width: 1200px) {
     .element, .steps, .person {width: 24%;}
     .tishen {opacity: 0;}
-    .links span {width: 9.5%;}
+    .link-wrap {width: 9.5%;}
     .us, .webs {width: 40%;}
     .wx {
         line-height: 3rem;
