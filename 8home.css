@@ -183,7 +183,7 @@ header {
 }
 
 @media (min-width: 576px) {
-    .element, .steps {width: 48%;}
+    .element, .steps {width: 50%;}
     .substrate {width:48%;}
     .person {width: 47%;}
     .tishen {opacity: 1;}
@@ -202,7 +202,7 @@ header {
 }
 
 @media (min-width: 768px) {
-    .element, .steps，.substrate {width: 49%;}
+    .element, .steps {width: 50%;}
     .person {width:47%;}
     .substrate {width:48%;}
     .tishen {opacity: 1;}
@@ -221,7 +221,7 @@ header {
 }
 
 @media (min-width: 992px) {
-    .element, .steps {width: 49%;}
+    .element, .steps {width: 50%;}
     .person {width:47%;}
     .substrate {width:48%;}
     .tishen {opacity: 1;}
@@ -242,7 +242,7 @@ header {
 }
 
 @media (min-width: 1200px) {
-    .element, .steps {width: 24%;}
+    .element, .steps {width: 25%;}
     .person {width: 21%;}
     .substrate {width:19.5%;}
     .tishen {opacity: 0;}
@@ -378,6 +378,9 @@ img {width: 100vw;}
 }
 .howtostudy{
     margin: 3vw 14vw;
+}
+.steps-wrap{
+    margin: 0 auto;
 }
 .bt-wrap {
     margin: 3vw 14vw;
