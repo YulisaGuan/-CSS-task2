@@ -84,6 +84,7 @@ i {
     width: 179px;
     height: 49px;
     background-position: -1px -221px;
+    transform: scale(.9);
 }
 
 .bg_8-archive {
@@ -169,7 +170,7 @@ header {
 
 @media(max-width: 576px) {
     header .contact {display: none;}
-    .line {display: none;}
+    .line {opacity: 0}
     .element, .steps, .person, .substrate{min-width: 100%;}
     .tishen {opacity: 1;}
     .link-wrap {width: 49%;}
@@ -183,8 +184,8 @@ header {
 
 @media (min-width: 576px) {
     .element, .steps {width: 48%;}
-    .substrate {width:50%;}
-    .person {width: 48.8%;}
+    .substrate {width:48%;}
+    .person {width: 47%;}
     .tishen {opacity: 1;}
     .link-wrap {width: 24%;}
     .us, .webs {width: 100%;}
@@ -201,8 +202,9 @@ header {
 }
 
 @media (min-width: 768px) {
-    .element, .steps，.person {width: 49%;}
-    .substrate {width:50%;}
+    .element, .steps，.substrate {width: 49%;}
+    .person {width:47%;}
+    .substrate {width:48%;}
     .tishen {opacity: 1;}
     .link-wrap {width: 19%;}
     .us, .webs {width: 40%;}
@@ -219,8 +221,9 @@ header {
 }
 
 @media (min-width: 992px) {
-    .element, .steps，.person {width: 49%;}
-    .substrate {width:50%;}
+    .element, .steps {width: 49%;}
+    .person {width:47%;}
+    .substrate {width:48%;}
     .tishen {opacity: 1;}
     .link-wrap {width: 19%;}
     .us, .webs {width: 40%;}
@@ -239,8 +242,9 @@ header {
 }
 
 @media (min-width: 1200px) {
-    .element, .steps, .person {width: 24%;}
-    .substrate {width:20%;}
+    .element, .steps {width: 24%;}
+    .person {width: 21%;}
+    .substrate {width:19.5%;}
     .tishen {opacity: 0;}
     .link-wrap {width: 9.5%;}
     .us, .webs {width: 40%;}
@@ -331,17 +335,26 @@ img {width: 100vw;}
     color: #999;
     text-align: justify;
 }
+.amount-wrap{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    width: auto;
+    margin: 0 auto;
+}
 .line {
     float: left;
+    margin-left: 15px;
     width: 2px;
     height: 200px;
     background: repeating-linear-gradient(0deg,#fff,#fff 3px,#dedede,#dedede 20px);
 }
 
 .amount {
-    width: 180px;
-    padding-left: 30px;
-    margin: 30px auto 0 auto;
+    float: left;
+    width: 150px;
+    margin-left: 15px;
     color: #999;
     text-align: left;
     line-height: 2.5rem;
@@ -363,9 +376,14 @@ img {width: 100vw;}
     margin: 6rem auto 2rem auto;
     text-align: center;
 }
-
+.howtostudy{
+    margin: 3vw 14vw;
+}
 .bt-wrap {
     margin: 3vw 14vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
 .steps {
     float: left;
@@ -398,8 +416,9 @@ img {width: 100vw;}
     flex-flow: column nowrap;
     justify-content: space-between;
     align-items: center;
+
     padding: 3rem; 
-    margin: 1rem .2rem;
+    margin: 1rem 1vw;
     box-shadow: 0 2px 10px #dedede;
 }
 .person h4{
@@ -429,20 +448,16 @@ img {width: 100vw;}
 
 .company {
     margin: 2vw 14vw;
-    /*display: flex;
-    flex-flow: row wrap; 
-    justify-content: center;*/
 }
 .substrate {
     float: left;
-    /*width: 200px;
-    flex-shrink: 0;*/
     display: flex;
     justify-content: center;
     align-items: center;
     height: 12rem;
     border-bottom-style: inset;
     background-color: #fff; 
+    margin: 2px;
 }
 .substrate:hover {
     z-index: 5;
