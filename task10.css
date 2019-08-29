@@ -120,6 +120,72 @@ nav{
 	color: #fff;
 	background-color: #1d7ad9;
 }
+.nav {
+    	width: 100%;
+        display: flex;
+    	flex-flow: row nowrap; 
+    	justify-content: flex-end;
+    }
+    .nav ul {
+    	padding: 0;
+    	margin: 0; 
+    }
+            
+    .nav ul li {
+        list-style: none;
+        width: 100px;
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        line-height: 48px;
+        cursor: pointer;
+    }
+         
+    .nav .menu {
+    	margin: 0 2vw;
+        width: 35px;
+        height: 30px;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #1d7ad9;;
+        border-radius: 6px;
+        display: none;
+    }
+    .bar {
+    	height: 2px;
+    	width: 20px;
+    	margin: 2px 0;
+    	background-color: #1d7ad9;
+    }
+
+            
+    @media (max-width: 576px) {
+	    .nav {
+	    	display: flex;
+	    	flex-flow: column nowrap; 
+	    	justify-content: flex-start;
+	    	align-items: flex-end;
+	    }
+        .nav .menu {
+			display: flex;
+    	}
+    	.nav .menu:hover+ul {
+    		display: block;
+    	}
+	    .nav>ul {
+	    	width: 100%;
+            display: none;
+        }
+        .nav ul li {
+        	width: 100%;
+        	margin: 0 auto;
+        }
+        .nav input {
+        	width: 100%;
+        	margin: 0;
+        }
+
+    }
 .progress {
 	margin: 30px 0 ;
 	display: flex;
