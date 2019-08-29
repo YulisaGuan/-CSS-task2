@@ -51,15 +51,16 @@ i {
 	.line {width: 80px;}
 	main {margin: 0 2vw;}
 	.options {width: 65%;}
-	.promotion,.wx {flex-flow: column nowrap;}	
+	.promotion,.wx {flex-flow: column nowrap;}
+	
 }
 @media (min-width: 576px){
 	header,nav, .progress{padding: 0 14vw;}
 	.nav ul{
-		display: flex;
-		flex-flow: row nowrap; 
-		justify-content: flex-end;
-    }
+	    	display: flex;
+	    	flex-flow: row nowrap; 
+	    	justify-content: flex-end;
+	    }
 	.line {width: 110px;}
 	main {margin: 0 14vw;}
 	.options {width: 80%;}
@@ -95,18 +96,21 @@ header input{
 	padding: 0 5px;
 	background: none;
 	color: #fff;	
+
 }
 .bor:hover,.bor:hover input{
 	padding: 0 15px;
 	color: #000;
 	background-color: #fff;
 }
-nav{background-color: #f9f9f9;}
+nav{
+	background-color: #f9f9f9;
+}
 .nav {
 	float: right;
 	margin: 15px 0;
 	width: 100%;
-	display: flex;
+    display: flex;
 	flex-flow: row nowrap; 
 	justify-content: flex-end;
 }
@@ -131,7 +135,7 @@ nav{background-color: #f9f9f9;}
 }
      
 .nav .menu {
-    margin: 0 2vw;
+	margin: 0 2vw;
     width: 35px;
     height: 30px;
     flex-flow: column nowrap;
@@ -140,6 +144,7 @@ nav{background-color: #f9f9f9;}
     border: 1px solid #1d7ad9;;
     border-radius: 6px;
     display: none;
+
 }
 .bar {
 	height: 2px;
@@ -157,16 +162,23 @@ nav{background-color: #f9f9f9;}
     	align-items: flex-end;
     }
     .nav .menu {display: flex;}
-    .nav .menu:hover+ul, .nav ul:hover{
-	display: block;
+	.nav input:hover {
+		color: #fff;
+		background-color: #1d7ad9;
 	}
+	.nav .menu:hover+ul, .nav ul:hover{
+		display: block;
+	}
+
+	
     .nav ul {
     	width: 100%;
-        display: none;
+    	display: none;
     }
     .nav ul li {
     	width: 100%;
     	margin: 0 auto;
+
     }
     .nav input {
     	width: 100%;
@@ -175,7 +187,7 @@ nav{background-color: #f9f9f9;}
 
 }
 .progress {
-	margin: 30px 0 ;
+	margin: 30px 0;
 	display: flex;
 	justify-content: flex-end;
 
@@ -209,7 +221,7 @@ nav{background-color: #f9f9f9;}
 .step span{
 	margin-top: 15px;
 }
-step:hover .line {
+.step:hover .line {
 	border-radius: 5px;
 }
 .step:hover .line,.step:hover .circle {
