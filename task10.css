@@ -159,7 +159,9 @@ nav{
     	align-items: flex-end;
     }
     .nav .menu {display: flex;}
-	.nav .menu:hover+ul {display: block;}
+    .nav .menu:hover+ul, .nav ul:hover{
+	display: block;
+	}
     .nav ul {
     	width: 100%;
         display: none;
