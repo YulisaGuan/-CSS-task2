@@ -101,9 +101,7 @@ header input{
 	color: #000;
 	background-color: #fff;
 }
-nav{
-	background-color: #f9f9f9;
-}
+nav{background-color: #f9f9f9;}
 .nav {
 	float: right;
 	margin: 15px 0;
@@ -133,7 +131,7 @@ nav{
 }
      
 .nav .menu {
-	margin: 0 2vw;
+    margin: 0 2vw;
     width: 35px;
     height: 30px;
     flex-flow: column nowrap;
