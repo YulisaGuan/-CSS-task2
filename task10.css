@@ -209,10 +209,13 @@ nav{
 .step span{
 	margin-top: 15px;
 }
-.current .line,.current .circle {
+step:hover .line {
+	border-radius: 5px;
+}
+.step:hover .line,.step:hover .circle {
 	background-color: #ff7f02;
 }
-.current span{
+.step:hover span{
 	color: #ff7f02;
 }
 .require {
