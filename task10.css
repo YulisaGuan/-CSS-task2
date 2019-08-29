@@ -107,7 +107,8 @@ nav{
 .nav {
 	float: right;
 	margin: 15px 0;
-    display: flex;
+	width: 100%;
+	display: flex;
 	flex-flow: row nowrap; 
 	justify-content: flex-end;
 }
