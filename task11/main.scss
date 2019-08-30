@@ -1,0 +1,61 @@
+$bg-color   : #eff0f4;
+$main-color : #5fc0cd;
+$text-color : #fff;
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $bg-color;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $text-color;
+    padding: .8rem;
+    background-color: $main-color
+}
+
+form {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    margin: 0 .5rem;
+    height: 260px;
+
+    .account {
+        display: flex;
+        align-items: center;
+        background-color: $text-color;
+      
+        img {
+            transform: scale(.7);
+            margin: .5rem;
+            padding-right: 1.5rem;
+            border-right: 3px solid $bg-color;
+        }
+      
+        input {
+            border: none;
+            outline: none;
+            color: $bg-color;
+            font-size: 1.1rem;
+        }
+    }
+    input[type="submit"] {
+        margin: 2rem -.5rem 0 -.5rem;
+        height: 50px;
+        color: $text-color;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: $main-color;
+    }
+}
+
+a {
+    float: right;
+    text-decoration: none;
+    color: $main-color;
+}
