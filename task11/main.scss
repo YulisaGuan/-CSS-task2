@@ -21,7 +21,6 @@ form {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
-    margin: 0 .5rem;
     height: 260px;
 
     .account {
@@ -44,7 +43,7 @@ form {
         }
     }
     input[type="submit"] {
-        margin: 2rem -.5rem 0 -.5rem;
+        margin-top: 2rem;
         height: 50px;
         color: $text-color;
         font-size: 18px;
