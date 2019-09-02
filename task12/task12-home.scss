@@ -1,0 +1,166 @@
+$main-color     : #5fc0cd;
+$title-color    : #fff;
+$subtitle-color : #999;
+$line-color     : #e1e5e7;
+$point-color    : #e26163;
+$large-font     : 22px;
+$small-font     : 16px;
+i {
+  background: url("12_1_sprites.png") no-repeat;
+}
+.bg-5_split {
+  display: inline-block;
+  margin: .5rem;
+  width: 3px;
+  height: 26px;
+  background-position:  -196px -51px;
+  transform: scale(.7);
+  vertical-align: middle;
+}
+
+.bg-5_star {
+  display: inline-block;
+  width: 24px;
+  height: 23px;
+  background-position: -196px -1px;
+  transform: scale(.7);
+}
+
+.bg-5_loc {
+  display: inline-block;
+  margin-right: 5px;
+  width: 18px;
+  height: 23px;
+  background-position:  -196px -26px;
+  transform: scale(.7);
+  vertical-align: text-bottom;
+}
+
+.bg-5_back {
+  float: left;
+  display: inline-block;
+  width: 22px;
+  height: 37px;
+  margin: 5px 0;
+  background-position:  -172px -1px;
+  transform: scale(.6);
+}
+
+.bg-5_avator {
+  display: inline-block;
+  margin-left: -20px;
+  width: 169px;
+  height: 169px;
+  background-position:  -1px -1px;
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+}
+header {
+  padding: 5px;
+  height: 45px;
+  line-height: 45px;
+  background-color: $main-color;
+  color: $title-color ;
+  .title {
+    margin: 0 auto;
+    text-align: center;
+    width: 100px;
+  }
+}
+.cover {
+  padding: 1.2rem .5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: $title-color;
+  background: url("task5bg.png") no-repeat center;
+  background-size: cover;
+  .info {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+  }
+  .avator {
+    border-radius: 50%;
+    transform: scale(.6);
+  }
+  .name, .addr {
+    margin: -20px -10px;
+  }
+  span {
+    line-height: 79px;
+    margin-right: 1rem;
+  }
+}
+.large-font {
+  font-size: $large-font;
+}
+.small-font {
+  font-size: $small-font;
+}
+
+.gray {
+  white-space: nowrap;
+  color: $subtitle-color;
+}
+.red {
+  font-size: $large-font;
+  color: $point-color;
+}
+.th {
+  padding: .5rem;
+  border-bottom: 1px solid $line-color;
+  span {
+       vertical-align: middle;
+  }
+}
+.detail {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+  padding: 1rem;
+  border-bottom: 1px solid $line-color;
+  span {
+    padding: .5rem;
+  }
+}
+.split {
+   color: $line-color;
+ }
+.tailwrap {
+  height: 80px;
+  background-color: $title-color;
+}
+footer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  height: 80px;
+  padding: 0 5%;
+  width: 90%;
+  background-color: $title-color;
+  input {
+    flex: 1;
+    margin: 1rem .3rem;
+    height: 70%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+  }
+}
+.msg {
+  color: $main-color;
+  border: 1px solid $main-color;
+  background-color: $title-color;
+}
+.contact {
+  color: $title-color;
+  border: 1px solid $main-color;
+  background-color: $main-color;
+}
+

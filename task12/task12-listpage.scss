@@ -1,0 +1,224 @@
+$main-color     : #5fc0cd;
+$title-color    : #fff;
+$default-color  : #000;
+$subtitle-color : #999;
+$dark-color     : #55a8b3;
+$line-color     : #e1e5e7;
+$point-color    : #e26163;
+$footer-color   : #f8fafb;
+$large-font     : 20px;
+$small-font     : 14px;
+i {
+  background: url("12_2_sprites.png") no-repeat;
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+}
+.bg-6_loclg {
+  display:inline-block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 10px;
+  width: 42px; height: 44px;
+  background-position:  -0 -0;
+  transform: scale(.7);
+}
+
+.bg-6_down {
+  float: right;
+  position: relative;
+  width: 0.7rem;
+  height: 0.5rem;
+  margin-top: 1.5rem;
+  margin-right: 0.5rem;
+  background-position: -8.8rem -4.8rem;
+  background-size: 10.5rem 6.3rem
+}
+.bg-6_calendar {
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px; height: 24px;
+  background-position:  -88px -61px;
+  transform: scale(.7);
+}
+
+.bg-6_locms {
+  display: inline-block;
+  vertical-align: middle;
+  width: 19px; height: 23px;
+  background-position:  -0 -85px;
+  transform: scale(.7);
+}
+
+.bg-6_right {
+  display: inline-block;
+  vertical-align: middle;
+  width: 19px; height: 33px;
+  background-position:  -88px -28px;
+  transform: scale(.7);
+}
+
+.bg-6_house {
+  width: 46px;
+  height: 48px;
+  background-position:  -42px -0;
+  transform: scale(.6);
+}
+
+.bg-6_Write {
+  position: absolute;
+  width: 40px; height: 41px;
+  background-position: -42px -44px;
+  transform: scale(.6);
+  margin: .5rem 0 0 .7rem;
+}
+
+.bg-6_man {
+  width: 42px; height: 41px;
+  background-position:  -0 -44px;
+  transform: scale(.6);
+}
+.large-font {
+  font-size: $large-font;
+ 
+}
+.small-font {
+  font-size: $small-font;
+}
+.red {
+  font-size: $large-font;
+  color: $point-color;
+}
+
+header {
+  padding: 10px 0;
+  height: 45px;
+  line-height: 37px;
+  width: 100%;
+  background-color: $main-color;
+  text-align: center;
+    .buttons {
+      display: inline-block;
+      border-radius: 10px;
+      background-color: $dark-color;
+
+      width: 160px;
+  }
+  input {
+    float: right;
+    border-radius: 0.5rem;
+    background-color: #55a8b3;
+    width: 80px;
+    border: none;
+    background: none;
+    outline: none;
+    padding: 10px;
+    color: $title-color;
+    &:hover {
+      color: $main-color;
+      background-color: $title-color;
+    }
+  }
+}
+
+.menugroup {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid $line-color;
+    .menu {
+      flex:1;
+      height: 45px;
+      line-height: 45px;
+      text-align: center;
+        select {
+          cursor: pointer;
+          width: 100%;
+          text-align-last: center;
+          color: $subtitle-color;
+          border: none;
+          background: url(6-down.jpg) no-repeat scroll right;
+          background-size: 1.2rem;
+          -webkit-appearance: none;
+          outline: none;
+        }
+    }
+  .line {
+     width: 1px;
+     background: linear-gradient(0deg,#fff, #ddd,#fff);
+   }
+}
+
+
+
+.content {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  padding: 1rem;
+  height: 6rem;
+  border-bottom: 1px solid $line-color;
+  color: $subtitle-color;
+  .date {
+    margin-left: 25px;
+    width: 50%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: $default-color;
+  }
+  .price {
+     line-height: 6rem;
+    span {
+      vertical-align: middle;
+      font-size: $large-font;
+      color: $point-color;
+    }
+   }
+}
+
+.tailwrap {
+  height: 4rem;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 3.5rem;
+  background-color: $footer-color;
+  .footericon {
+    margin: 3px 0;
+    display: flex;
+    text-align: center;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .circle {
+    margin: 0 2.5rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    background-color: $main-color;
+  }
+  .home {
+     font-size: $small-font;
+     color: $main-color;
+   }
+  .my {
+    font-size: $small-font;
+    color: $subtitle-color;
+  }
+}
+
+
+
+
+
+
