@@ -79,6 +79,7 @@ i {
 
 .bg-6_Write {
   position: absolute;
+  margin: 8px 0 0 11px;
   width: 40px;
   height: 41px;
   background-position: -42px -44px;
@@ -136,12 +137,12 @@ header {
   border-bottom: 1px solid #e1e5e7; }
   .menugroup .menu {
     flex: 1;
-    height: 45px;
     line-height: 45px;
     text-align: center; }
     .menugroup .menu select {
       cursor: pointer;
       width: 100%;
+      padding: 14px 0;
       text-align: center;
       text-align-last: center;
       color: #999;
@@ -150,8 +151,6 @@ header {
       background-size: 1.2rem;
       -webkit-appearance: none;
       outline: none; }
-      .menugroup .menu select option {
-        margin: 10px; }
   .menugroup .line {
     width: 1px;
     background: linear-gradient(0deg, #fff, #ddd, #fff); }
@@ -200,9 +199,6 @@ footer {
     justify-content: space-between;
     align-items: center; }
   footer .circle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin: 0 2rem;
     width: 60px;
     height: 60px;
