@@ -8,13 +8,21 @@ $point-color    : #e26163;
 $footer-color   : #f8fafb;
 $large-font     : 16px;
 $small-font     : 12px;
+$scale          : scale(.6);
 i {
   background: url("12_2_sprites.png") no-repeat;
+}
+@mixin transform($scale)  {
+          transform: $scale;
+       -o-transform: $scale;
+      -ms-transform: $scale;
+     -moz-transform: $scale;
+  -webkit-transform: $scale;
 }
 * {
   padding: 0;
   margin: 0;
-  font-size: 1.3vw;
+  font-size: 13px;
 }
 .bg-6_loclg {
   display:inline-block;
@@ -24,7 +32,7 @@ i {
   margin: 4px;
   width: 42px; height: 44px;
   background-position:  -0 -0;
-  transform: scale(.6);
+  @include transform($scale);
 }
 
 .bg-6_down {
@@ -42,7 +50,7 @@ i {
   vertical-align: middle;
   width: 24px; height: 24px;
   background-position:  -88px -61px;
-  transform: scale(.6);
+  @include transform($scale);
 }
 
 .bg-6_locms {
@@ -50,7 +58,7 @@ i {
   vertical-align: middle;
   width: 19px; height: 23px;
   background-position:  -0 -85px;
-  transform: scale(.6);
+  @include transform($scale);
 }
 
 .bg-6_right {
@@ -58,28 +66,28 @@ i {
   vertical-align: middle;
   width: 19px; height: 33px;
   background-position:  -88px -28px;
-  transform: scale(.5);
+  @include transform($scale);
 }
 
 .bg-6_house {
   width: 46px;
   height: 48px;
   background-position:  -42px -0;
-  transform: scale(.6);
+  @include transform($scale);
 }
 
 .bg-6_Write {
   position: absolute;
   width: 40px; height: 41px;
   background-position: -42px -44px;
-  transform: scale(.6);
+  @include transform($scale);
   margin: 8px 0 0 12px;
 }
 
 .bg-6_man {
   width: 42px; height: 41px;
   background-position:  -0 -44px;
-  transform: scale(.6);
+  @include transform($scale);
 }
 .large-font {
   font-size: $large-font;
