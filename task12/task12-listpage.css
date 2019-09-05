@@ -61,11 +61,11 @@ i {
   width: 19px;
   height: 33px;
   background-position: -88px -28px;
-  transform: scale(0.6);
-  -o-transform: scale(0.6);
-  -ms-transform: scale(0.6);
-  -moz-transform: scale(0.6);
-  -webkit-transform: scale(0.6); }
+  transform: scale(0.5);
+  -o-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  -webkit-transform: scale(0.5); }
 
 .bg-6_house {
   width: 46px;
@@ -86,8 +86,7 @@ i {
   -o-transform: scale(0.6);
   -ms-transform: scale(0.6);
   -moz-transform: scale(0.6);
-  -webkit-transform: scale(0.6);
-  margin: 8px 0 0 12px; }
+  -webkit-transform: scale(0.6); }
 
 .bg-6_man {
   width: 42px;
@@ -143,6 +142,7 @@ header {
     .menugroup .menu select {
       cursor: pointer;
       width: 100%;
+      text-align: center;
       text-align-last: center;
       color: #999;
       border: none;
@@ -150,6 +150,8 @@ header {
       background-size: 1.2rem;
       -webkit-appearance: none;
       outline: none; }
+      .menugroup .menu select option {
+        margin: 10px; }
   .menugroup .line {
     width: 1px;
     background: linear-gradient(0deg, #fff, #ddd, #fff); }
@@ -169,13 +171,11 @@ header {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    color: #000;
-    font-weight: 600; }
+    color: #000; }
   .content .price {
     line-height: 6rem; }
     .content .price span {
       vertical-align: middle;
-      font-weight: 600;
       color: #e26163; }
 
 a {
@@ -200,6 +200,9 @@ footer {
     justify-content: space-between;
     align-items: center; }
   footer .circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0 2rem;
     width: 60px;
     height: 60px;
