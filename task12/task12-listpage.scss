@@ -9,6 +9,7 @@ $footer-color   : #f8fafb;
 $large-font     : 16px;
 $small-font     : 12px;
 $scale          : scale(.6);
+$small-scale    : scale(.5);
 i {
   background: url("12_2_sprites.png") no-repeat;
 }
@@ -66,7 +67,7 @@ i {
   vertical-align: middle;
   width: 19px; height: 33px;
   background-position:  -88px -28px;
-  @include transform($scale);
+  @include transform($small-scale);
 }
 
 .bg-6_house {
@@ -81,7 +82,6 @@ i {
   width: 40px; height: 41px;
   background-position: -42px -44px;
   @include transform($scale);
-  margin: 8px 0 0 12px;
 }
 
 .bg-6_man {
@@ -140,6 +140,7 @@ header {
         select {
           cursor: pointer;
           width: 100%;
+          text-align: center;
           text-align-last: center;
           color: $subtitle-color;
           border: none;
@@ -147,7 +148,11 @@ header {
           background-size: 1.2rem;
           -webkit-appearance: none;
           outline: none;
+          option {
+            margin: 10px;
+          }
         }
+
     }
   .line {
      width: 1px;
@@ -173,13 +178,11 @@ header {
     white-space: nowrap;
     overflow: hidden;
     color: $default-color;
-    font-weight: 600;
   }
   .price {
      line-height: 6rem;
     span {
       vertical-align: middle;
-      font-weight: 600;
       color: $point-color;
     }
    }
@@ -209,6 +212,9 @@ footer {
     align-items: center;
   }
   .circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0 2rem;
     width: 60px;
     height: 60px;
