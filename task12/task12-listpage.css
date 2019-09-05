@@ -4,14 +4,14 @@ i {
 * {
   padding: 0;
   margin: 0;
-  font-size: 1.2vw; }
+  font-size: 1.3vw; }
 
 .bg-6_loclg {
   display: inline-block;
   position: absolute;
   top: 0;
   right: 0;
-  margin: 10px;
+  margin: 4px;
   width: 42px;
   height: 44px;
   background-position: -0 -0;
@@ -78,9 +78,9 @@ i {
   font-size: 12px; }
 
 header {
-  padding: 10px 0;
-  height: 45px;
-  line-height: 37px;
+  padding: 5px 0;
+  height: 40px;
+  line-height: 40px;
   width: 100%;
   background-color: #5fc0cd;
   text-align: center; }
@@ -141,11 +141,13 @@ header {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    color: #000; }
+    color: #000;
+    font-weight: 600; }
   .content .price {
     line-height: 6rem; }
     .content .price span {
       vertical-align: middle;
+      font-weight: 600;
       color: #e26163; }
 
 a {
